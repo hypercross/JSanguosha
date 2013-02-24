@@ -1,0 +1,15 @@
+package test;
+
+import java.util.HashMap;
+
+import game.Action;
+import game.IEntityContainer;
+import game.entity.Entity;
+import game.entity.GameEntity;
+import game.type.LinkedType;
+import game.type.Type;
+
+public class CommandAction extends Action{
+
+	HashMap<String,String> context = new HashMap<String,String>();
+}

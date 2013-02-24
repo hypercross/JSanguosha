@@ -1,0 +1,25 @@
+package application.network;
+
+public class SelectionUpdate {
+	int[] enabled;
+	int[] selected;
+	
+	public boolean isEnabled(int id)
+	{
+		for(int i : enabled)
+			if(i == id)return true;
+		
+		for(int i : selected)
+			if(i == id)return true;
+		
+		return false;
+	}
+	
+	public boolean isSelected(int id)
+	{
+		for(int i : selected)
+			if(i == id)return true;
+		
+		return false;
+	}
+}

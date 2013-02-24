@@ -1,0 +1,16 @@
+package application.view;
+
+import game.entity.Entity;
+
+import java.util.HashMap;
+
+public class ClientControlManager {
+	HashMap<Selectable,Entity> view_to_entity = new HashMap<Selectable,Entity>();
+	
+	public void register(Selectable actor, Entity entity)
+	{
+		view_to_entity.put(actor,entity);
+	}
+	
+	
+}

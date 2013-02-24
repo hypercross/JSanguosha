@@ -1,0 +1,16 @@
+package game;
+
+import game.entity.GameEntity;
+
+public interface IPlayer {
+
+	public int playerID();
+	
+	public void setID(int id);
+	
+	public void propose(ActionSet as, GameEntity game);
+	
+	public boolean isReady();
+	
+	public Action getDecision(GameEntity game);
+}

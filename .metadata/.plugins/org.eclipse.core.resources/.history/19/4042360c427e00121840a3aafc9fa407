@@ -1,0 +1,15 @@
+package game.type;
+
+public class StringType {
+	String name;
+	String parent;
+	
+	public StringType(String string)
+	{
+		int point = string.lastIndexOf(".");
+		name = string.substring(point+1);
+		parent = string.substring(0, point);
+		
+	}
+
+}

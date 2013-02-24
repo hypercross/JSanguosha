@@ -1,0 +1,31 @@
+package application.network.handlers;
+
+import application.network.EntityDeployRequest;
+import application.network.NetworkManager.Side;
+
+public class EntityDeployHandler implements INetworkHandler {
+
+	@Override
+	public boolean captured(Object obj) {
+		return obj instanceof EntityDeployRequest;
+	}
+
+	@Override
+	public Object handledWithResponse(Object obj) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void handled(Object obj) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Side side() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

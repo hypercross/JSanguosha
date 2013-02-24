@@ -1,0 +1,10 @@
+package gameEvent;
+
+import game.Entity.Entity;
+
+public interface IRule {
+	
+	public boolean trigger(GameEvent ge);
+	
+	public Entity owner();
+}

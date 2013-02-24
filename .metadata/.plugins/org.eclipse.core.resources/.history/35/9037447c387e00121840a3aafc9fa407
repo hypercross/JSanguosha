@@ -1,0 +1,69 @@
+package application.network.handlers;
+
+import game.entity.CardEntity;
+import game.entity.CardSlotEntity;
+import game.entity.Entity;
+import game.entity.PlayerEntity;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+
+import application.network.EntityDeployRequest;
+import application.network.NetworkManager.Side;
+import application.view.CardEntityView;
+import application.view.ClientControlView;
+import application.view.EntityViewManager;
+import application.view.PlayerEntityView;
+
+public class EntityDeployHandler implements INetworkHandler {
+
+	Stage stage;
+	public EntityDeployHandler(Stage stage)
+	{
+		this.stage = stage;
+	}
+	
+	@Override
+	public boolean captured(Object obj) {
+		return obj instanceof EntityDeployRequest;
+	}
+
+	@Override
+	public Object handledWithResponse(Object obj) {
+		return null;
+	}
+
+	@Override
+	public void handled(Object obj) {
+		
+		EntityDeployRequest edr = (EntityDeployRequest) obj;
+		Entity entity = edr.info.createClientEntity();
+		
+		Actor actor = null;
+		if(entity instanceof CardEntity)
+		{
+			actor = new CardEntityView((CardEntity) entity);
+		}else if (entity instanceof CardSlotEntity)
+		{
+			return;
+			//TODO handle update CardSlotEntity
+		}else if (entity instanceof PlayerEntity)
+		{
+			if(edr.isClient)
+				actor = new ClientControlView(stage, (PlayerEntity) entity);
+			else actor = new PlayerEntityView((PlayerEntity) entity);
+		}else return;
+		
+		if(!edr.viewable)return;
+
+		EntityViewManager.instance.addActor(stage, actor, entity);
+		actor.setPosition(edr.x * stage.getWidth() - actor.getWidth()/2, edr.y * stage.getHeight() - actor.getHeight()/2);
+		
+		Log.o(entity.id+"@"+entity.getClass().getSimpleName());
+	}
+
+	@Override
+	public Side side() {
+		return Side.Client;
+	}
+
+}

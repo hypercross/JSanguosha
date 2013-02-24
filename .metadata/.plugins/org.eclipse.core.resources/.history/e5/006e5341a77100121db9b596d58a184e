@@ -1,0 +1,16 @@
+package application.network;
+
+public class NetworkManager {
+	public enum Side
+	{
+		Server,
+		Client
+	}
+	
+	Side side;
+	
+	public NetworkManager(Side side)
+	{
+		this.side = side;
+	}
+}

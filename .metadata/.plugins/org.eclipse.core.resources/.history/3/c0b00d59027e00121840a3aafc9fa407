@@ -1,0 +1,23 @@
+package hx;
+
+public class Log {
+
+	public static void o(String n)
+	{
+		System.out.println(n);
+	}
+	
+	public static void e(String n)
+	{
+		System.err.println(n);
+	}
+	
+	public static void o(Object[] n)
+	{
+		String str = "[";
+		for(Object obj:n)str+= obj.toString() + ", ";
+		str+= "]";
+		
+		o(str);
+	}
+}

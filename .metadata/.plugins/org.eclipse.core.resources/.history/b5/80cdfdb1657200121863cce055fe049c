@@ -1,0 +1,9 @@
+package application.network;
+
+import game.entity.Entity;
+
+public class EntityDeployRequest<T extends Entity> {
+	public int id;
+	int x,y;
+	EntityUpdate<T> info;
+}

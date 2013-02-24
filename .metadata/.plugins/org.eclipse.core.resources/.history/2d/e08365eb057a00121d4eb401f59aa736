@@ -1,0 +1,46 @@
+package application.network;
+
+import game.ActionSet;
+import game.entity.Entity;
+import game.type.Type;
+
+public class SelectionUpdate {
+	int[] selected;
+	Type[] replies;
+	
+	public boolean isEnabled(int id)
+	{
+		return true;
+	}
+	
+	public boolean isSelected(int id)
+	{
+		for(int i : selected)
+			if(i == id)return true;
+		
+		return false;
+	}
+	
+	public void select(int... ids)
+	{
+		selected = ids;
+	}
+	
+	public void repliable(Type... atype)
+	{
+		replies = atype;
+	}
+	
+	public static SelectionUpdate getUpdate(int[] selection, ActionSet as)
+	{
+		SelectionUpdate su = new SelectionUpdate();
+
+		su.selected = new int[selection.length];
+		for(int i =0;i<selection.length;i++)
+			su.selected[i] = selection[i];
+		
+		su.replies = as.types;
+		
+		return su;
+	}
+}

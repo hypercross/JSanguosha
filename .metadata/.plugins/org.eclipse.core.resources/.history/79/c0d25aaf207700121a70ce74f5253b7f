@@ -1,0 +1,39 @@
+package search;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.InputStreamReader;
+import java.util.HashMap;
+
+
+public class Search {
+	
+	static HashMap<String,City> cities = new HashMap<String,City>();
+	
+	public static void Main(String[] args) throws Exception
+	{
+		BufferedReader br = new BufferedReader(new FileReader("cities.txt"));
+		BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+		
+		while(true)
+		{
+			String line = br.readLine();
+			if(line == null)break;
+			
+			String[] list = line.split(" ");
+			
+			if(!cities.containsKey(list[0]))cities.put(list[0],new City(list[0]));
+			if(!cities.containsKey(list[1]))cities.put(list[1],new City(list[1]));
+			
+			City.put(cities.get(list[0]), cities.get(list[0]), Integer.parseInt(list[2]));
+		}
+		
+		System.out.println("city names >");
+		City a = cities.get(console.readLine());
+		City b = cities.get(console.readLine());
+		
+		BFS.query(a, b);
+		
+		System.out.println(b);
+	}
+}

@@ -1,0 +1,31 @@
+package application.network;
+
+import java.net.InetSocketAddress;
+import java.util.HashMap;
+
+public class NetworkManager {
+	public enum Side
+	{
+		Server,
+		Client
+	}
+	
+	Side side;
+	
+	HashMap <InetSocketAddress,Integer> connection_to_playerID;
+	HashMap <Integer,InetSocketAddress> playerID_to_connection;
+	
+	public NetworkManager(Side side)
+	{
+		this.side = side;
+		
+		connection_to_playerID = new HashMap <InetSocketAddress,Integer>();
+		playerID_to_connection = new HashMap <Integer,InetSocketAddress>();
+	}
+	
+	private void register(int id, InetSocketAddress address)
+	{
+		connection_to_playerID.put(address,id);
+		playerID_to_connection.put(id,address);
+	}
+}

@@ -1,0 +1,35 @@
+package hx;
+
+public class Log {
+
+	private static boolean notTraced()
+	{
+		StackTraceElement[] stack = Thread.currentThread().getStackTrace();
+		try {
+			return Class.forName(stack[2].getClassName()).isAnnotationPresent(Traced.class);
+		} catch (ClassNotFoundException e) {
+			//hmmm
+		}
+	}
+	
+	
+	public static void o(String n)
+	{
+		if(notTraced())return;
+		System.out.println(n);
+	}
+	
+	public static void e(String n)
+	{
+		System.err.println(n);
+	}
+	
+	public static void o(Object[] n)
+	{
+		String str = "[";
+		for(Object obj:n)str+= obj.toString() + ", ";
+		str+= "]";
+		
+		o(str);
+	}
+}

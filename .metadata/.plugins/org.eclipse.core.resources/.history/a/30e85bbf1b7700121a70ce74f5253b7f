@@ -1,0 +1,13 @@
+package search;
+
+import java.util.HashSet;
+
+public class BFS {
+	
+	HashSet<Util.City> cities = new HashSet<Util.City>();
+	
+	public static void Main(String[] args)
+	{
+		
+	}
+}

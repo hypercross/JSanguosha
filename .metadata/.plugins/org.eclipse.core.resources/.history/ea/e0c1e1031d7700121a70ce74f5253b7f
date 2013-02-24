@@ -1,0 +1,33 @@
+package search;
+
+import java.util.HashMap;
+
+public class City {
+	String name;
+	HashMap<City,Integer> distanceMap;
+
+	public City(String name)
+	{
+		this.name = name;
+		distanceMap = new HashMap<City,Integer>();
+	}
+
+	public int hashCode()
+	{
+		return name.hashCode();
+	}
+
+	public static void put(City a, City b, int dist)
+	{
+		a.distanceMap.put(b, dist);
+		b.distanceMap.put(a, dist);
+	}
+
+	public static int dist(City a,City b)
+	{
+		if(a.distanceMap.containsKey(b))
+			return a.distanceMap.get(b);
+		
+		return Integer.MAX_VALUE;
+	}
+}

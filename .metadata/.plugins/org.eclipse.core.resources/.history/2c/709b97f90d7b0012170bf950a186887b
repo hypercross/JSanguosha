@@ -1,0 +1,5 @@
+package application.network.handlers;
+
+public class EntityUpdateHandler {
+
+}

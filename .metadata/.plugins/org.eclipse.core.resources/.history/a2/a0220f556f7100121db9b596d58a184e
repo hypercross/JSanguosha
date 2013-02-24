@@ -1,0 +1,17 @@
+package application.network;
+
+import game.entity.Entity;
+import game.type.LinkedType;
+import game.type.Type;
+
+public class EntityUpdate<T extends Entity> {
+	public int id;
+	public String name;
+	public String type;
+	
+	public void update(T entity)
+	{
+		entity.name = name;
+		entity.type = new LinkedType(type,Type.BASE_TYPE);
+	}
+}
