@@ -7,6 +7,7 @@ import application.view.BackgroundView;
 import application.view.ConnectionView;
 import application.view.EntityInfoLabel;
 import game.entity.GameEntity;
+import game.type.MetaLoader;
 import test.TestEnvironment;
 import test.TestPlayerManager;
 
@@ -26,6 +27,8 @@ public class JSanguosha implements ApplicationListener {
     ArrayList<EntityInfoLabel> labels = new ArrayList<EntityInfoLabel>(); 
 
 	public void create () {
+		MetaLoader.loadAll();
+		
     	 stage = new Stage();
     	 stage.setViewport(1280, 800, false);
          Gdx.input.setInputProcessor(stage);

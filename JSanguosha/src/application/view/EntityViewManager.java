@@ -2,7 +2,6 @@ package application.view;
 
 import game.entity.Entity;
 import hx.Log;
-import hx.Traced;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,7 +11,6 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 
-@Traced
 public class EntityViewManager {
 	public	static EntityViewManager instance = new EntityViewManager();
 	
@@ -57,7 +55,7 @@ public class EntityViewManager {
 		
 		for(IEntityView aiev : iev)aiev.updateProperty();
 		
-		Log.o(entity.root().toString());
+		Log.fine(entity.root().toString());
 	}
 	
 	public synchronized void removeAll()

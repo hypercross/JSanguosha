@@ -63,7 +63,7 @@ public class EntityDeployHandler implements INetworkHandler {
 		EntityViewManager.instance.addActor(stage, actor, entity);
 		actor.setPosition(edr.x * stage.getWidth() - actor.getWidth()/2, edr.y * stage.getHeight() - actor.getHeight()/2);
 		
-		Log.o(entity.id()+"@"+entity.getClass().getSimpleName());
+		Log.fine(entity.id()+"@"+entity.getClass().getSimpleName());
 	}
 
 	@Override

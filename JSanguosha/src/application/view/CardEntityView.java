@@ -26,19 +26,10 @@ public class CardEntityView extends Actor implements IEntityView{
 		select = new Selectable(this);
 		
 		card = ce;
-		image = DefaultSkin.instance.getRegion(card.type.fullName());
 		select.setTexture(DefaultSkin.instance.getRegion("card/glow"));
 		
 		numberLabel = new Label(String.valueOf(card.number),DefaultSkin.instance);
-		numberLabel.setColor(Color.BLACK);
-		
-		String suitName = "";
-		if(card.suit == 'S')suitName = "card/spade";
-		else if(card.suit == 'C')suitName = "card/club";
-		else if(card.suit == 'D')suitName = "card/diamond";
-		else if(card.suit == 'H')suitName = "card/heart";
-		
-		suit = DefaultSkin.instance.getRegion(suitName);
+		updateProperty();
 		
 		this.setWidth(image.getRegionWidth());
 		this.setHeight(image.getRegionHeight());
@@ -85,6 +76,18 @@ public class CardEntityView extends Actor implements IEntityView{
 
 	@Override
 	public void updateProperty() {
-		//TODO - card entity update
+		image = card.type.meta().getCover();
+		numberLabel.setText(String.valueOf(card.number));
+		
+		if(card.suit == 'S' || card.suit == 'C')numberLabel.setColor(Color.BLACK);
+		else numberLabel.setColor(Color.RED);
+		
+		String suitName = "";
+		if(card.suit == 'S')suitName = "card/spade";
+		else if(card.suit == 'C')suitName = "card/club";
+		else if(card.suit == 'D')suitName = "card/diamond";
+		else if(card.suit == 'H')suitName = "card/heart";
+		
+		suit = DefaultSkin.instance.getRegion(suitName);
 	}
 }

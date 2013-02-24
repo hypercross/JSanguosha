@@ -2,12 +2,10 @@ package application.network.handlers;
 
 import game.entity.Entity;
 import hx.Log;
-import hx.Traced;
 import application.network.EntityUpdate;
 import application.network.NetworkManager.Side;
 import application.view.EntityViewManager;
 
-@Traced
 public class EntityUpdateHandler implements INetworkHandler{
 
 	
@@ -26,7 +24,7 @@ public class EntityUpdateHandler implements INetworkHandler{
 
 		EntityUpdate eu = (EntityUpdate)obj;
 		
-		Log.o("entity update "+eu.id+"@"+eu.getClass().getName());
+		Log.fine("entity update "+eu.id+"@"+eu.getClass().getName());
 		
 		if(!Entity.ingame.containsKey(eu.id))Entity.ingame.put(eu.id, eu.createClientEntity());
 		else eu.update(Entity.ingame.get(eu.id));

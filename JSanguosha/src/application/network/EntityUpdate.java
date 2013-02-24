@@ -14,7 +14,7 @@ public abstract class EntityUpdate {
 
 	public void update(Entity entity)
 	{
-		Log.o("updating " + entity.toString());
+		Log.fine("updating " + entity.toString());
 		entity.setId(id);
 		entity.name = name;
 		entity.type = Type.fromString(type);

@@ -13,6 +13,7 @@ public class TypeMeta {
 	
 	public TypeMeta(String name, String desc, TextureRegion... imgs)
 	{
+		this.name = name;
 		description = desc;
 		if(imgs.length>0)cover = imgs[0];
 		if(imgs.length>1)banner = imgs[1];
