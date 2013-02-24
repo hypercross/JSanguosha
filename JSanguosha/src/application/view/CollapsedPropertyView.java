@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 
 public abstract class CollapsedPropertyView <T extends Entity> extends Table implements IEntityView {
 
@@ -19,7 +20,18 @@ public abstract class CollapsedPropertyView <T extends Entity> extends Table imp
 		this.left();
 		this.sel = new Selectable(this);
 		
-		updateProperty();
+		Object[] objects = drawnObjects();
+
+		for(Object obj : objects)
+		{
+			if(obj instanceof String)
+			{
+				this.add(new Label((String)obj, DefaultSkin.instance));
+			}else if(obj instanceof TextureRegion)
+			{
+				this.add(new Image((TextureRegion)obj));
+			}
+		}
 	}
 
 	protected abstract Object[] drawnObjects();
@@ -36,23 +48,19 @@ public abstract class CollapsedPropertyView <T extends Entity> extends Table imp
 
 	public void updateProperty()
 	{
-		this.setVisible(false);
-		
-		this.clear();
-
 		Object[] objects = drawnObjects();
 
+		int i = 0;
 		for(Object obj : objects)
 		{
 			if(obj instanceof String)
 			{
-				this.add(new Label((String)obj, DefaultSkin.instance));
+				((Label)this.getChildren().get(i++)).setText((CharSequence) obj);
 			}else if(obj instanceof TextureRegion)
 			{
-				this.add(new Image((TextureRegion)obj));
+				Image img = (Image)this.getChildren().get(i++);
+				((TextureRegionDrawable)img.getDrawable()).setRegion((TextureRegion)obj);
 			}
 		}
-		
-		this.setVisible(true);
 	}
 }
