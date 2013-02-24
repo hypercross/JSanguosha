@@ -1,7 +1,0 @@
-package application.view;
-
-public class EntityViewManager {
-	static EntityViewManager instance = new EntityViewManager();
-	
-	
-}
