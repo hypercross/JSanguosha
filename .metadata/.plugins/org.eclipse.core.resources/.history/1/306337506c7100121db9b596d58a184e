@@ -1,7 +1,0 @@
-package application.network;
-
-public class EntityUpdate {
-	public byte classID;
-	public String name;
-	public String type;
-}

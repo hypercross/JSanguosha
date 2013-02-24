@@ -1,5 +1,0 @@
-package application.network;
-
-public class EntityDeployRequest {
-
-}

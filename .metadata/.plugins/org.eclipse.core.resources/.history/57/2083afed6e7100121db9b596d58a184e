@@ -1,7 +1,0 @@
-package application.network;
-
-import game.entity.CardSlotEntity;
-
-public class CardSlotEntityUpdate extends EntityUpdate<CardSlotEntity> {
-
-}

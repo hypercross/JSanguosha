@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="1065" y="233">
 <fastViewData fastViewLocation="1024"/>
@@ -18,7 +18,7 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="net.sf.jadclipse.JadclipseClassFileEditor" itemType="typePlaceholder" x="38" y="22"/>
+<coolItem id="net.sf.jadclipse.JadclipseClassFileEditor" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -26,27 +26,36 @@
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1358347391455" focus="true" label="Workspace - Java">
 <editors>
-<editorArea activeWorkbook="DefaultEditorWorkbook">
-<info part="DefaultEditorWorkbook">
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@79e30c3d">
+<info part="org.eclipse.ui.internal.EditorStack@79e30c3d">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="3"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="DefaultEditorWorkbook" ratio="0.49966556" ratioLeft="747" ratioRight="748" relationship="2" relative="org.eclipse.ui.internal.EditorStack@79e30c3d">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
 <part id="7"/>
+<part id="27"/>
 <part id="8"/>
 <part id="9"/>
 <part id="10"/>
 <part id="11"/>
 <part id="12"/>
-<part id="16"/>
 <part id="13"/>
 <part id="14"/>
 <part id="15"/>
+<part id="16"/>
 <part id="17"/>
 <part id="18"/>
 <part id="19"/>
@@ -57,644 +66,162 @@
 <part id="24"/>
 <part id="25"/>
 <part id="26"/>
-<part id="27"/>
 <part id="28"/>
 <part id="29"/>
 <part id="30"/>
 <part id="31"/>
 <part id="32"/>
-<part id="33"/>
-<part id="34"/>
-<part id="35"/>
-<part id="36"/>
-<part id="37"/>
-<part id="38"/>
-<part id="39"/>
-<part id="40"/>
-<part id="41"/>
-<part id="42"/>
-<part id="43"/>
-<part id="44"/>
-<part id="45"/>
-<part id="46"/>
-<part id="47"/>
-<part id="48"/>
-<part id="49"/>
-<part id="50"/>
-<part id="51"/>
-<part id="52"/>
-<part id="53"/>
-<part id="54"/>
-<part id="55"/>
-<part id="56"/>
-<part id="57"/>
-<part id="58"/>
-<part id="59"/>
-<part id="60"/>
-<part id="61"/>
-<part id="62"/>
-<part id="63"/>
-<part id="64"/>
-<part id="65"/>
-<part id="66"/>
-<part id="67"/>
-<part id="68"/>
-<part id="69"/>
-<part id="70"/>
-<part id="71"/>
-<part id="72"/>
-<part id="73"/>
-<part id="74"/>
-<part id="75"/>
-<part id="76"/>
-<part id="77"/>
-<part id="78"/>
-<part id="79"/>
-<part id="80"/>
-<part id="81"/>
-<part id="82"/>
-<part id="83"/>
-<part id="84"/>
-<part id="85"/>
-<part id="86"/>
-<part id="87"/>
-<part id="88"/>
-<part id="89"/>
-<part id="90"/>
-<part id="91"/>
-<part id="92"/>
-<part id="93"/>
-<part id="94"/>
-<part id="95"/>
-<part id="96"/>
-<part id="97"/>
-<part id="98"/>
-<part id="99"/>
-<part id="100"/>
-<part id="101"/>
-<part id="102"/>
-<part id="103"/>
-<part id="104"/>
-</presentation>
-</folder>
-</info>
-<info part="org.eclipse.ui.internal.EditorStack@57502b64" ratio="0.48324397" ratioLeft="721" ratioRight="771" relationship="2" relative="DefaultEditorWorkbook">
-<folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="9"/>
-<part id="0"/>
-<part id="1"/>
-<part id="16"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="17"/>
-<part id="24"/>
-<part id="18"/>
-<part id="19"/>
-<part id="20"/>
-<part id="23"/>
-<part id="21"/>
-<part id="22"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="T:/Game/JSanguosha/JSanguosha/src/Main.java" title="Main.java" tooltip="JSanguosha/src/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="565" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventTree.java" partName="GameEventTree.java" path="T:/Game/JSanguosha/JSanguosha/src/GameEvent/GameEventTree.java" title="GameEventTree.java" tooltip="JSanguosha/src/GameEvent/GameEventTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/GameEvent/GameEventTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="740" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RuleRegistry.java" partName="RuleRegistry.java" path="T:/Game/JSanguosha/JSanguosha/src/GameEvent/RuleRegistry.java" title="RuleRegistry.java" tooltip="JSanguosha/src/GameEvent/RuleRegistry.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/GameEvent/RuleRegistry.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="462" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Action.java" partName="Action.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Action.java" title="Action.java" tooltip="JSanguosha/src/Game/Action.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Action.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="110" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPlayer.java" partName="IPlayer.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/IPlayer.java" title="IPlayer.java" tooltip="JSanguosha/src/Game/IPlayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/IPlayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="82" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICard.java" partName="ICard.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/ICard.java" title="ICard.java" tooltip="JSanguosha/src/Game/ICard.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/ICard.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="172" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IEntityContainer.java" partName="IEntityContainer.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/IEntityContainer.java" title="IEntityContainer.java" tooltip="JSanguosha/src/Game/IEntityContainer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/IEntityContainer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="255" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPackage.java" partName="IPackage.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/IPackage.java" title="IPackage.java" tooltip="JSanguosha/src/Game/IPackage.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/IPackage.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="108" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Type.java" partName="Type.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Type/Type.java" title="Type.java" tooltip="JSanguosha/src/Game/Type/Type.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Type/Type.java"/>
-<editorState selectionHorizontalPixel="77" selectionLength="0" selectionOffset="711" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActionSet.java" partName="ActionSet.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/ActionSet.java" title="ActionSet.java" tooltip="JSanguosha/src/Game/ActionSet.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/ActionSet.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="300" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Environment.java" partName="Environment.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Environment.java" title="Environment.java" tooltip="JSanguosha/src/Game/Environment.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Environment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="129" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TypeGame.java" partName="TypeGame.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Type/TypeGame.java" title="TypeGame.java" tooltip="JSanguosha/src/Game/Type/TypeGame.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Type/TypeGame.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="121" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TypePlayer.java" partName="TypePlayer.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Type/TypePlayer.java" title="TypePlayer.java" tooltip="JSanguosha/src/Game/Type/TypePlayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Type/TypePlayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="58" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TypeCard.java" partName="TypeCard.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Type/TypeCard.java" title="TypeCard.java" tooltip="JSanguosha/src/Game/Type/TypeCard.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Type/TypeCard.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="56" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardEntity.java" partName="CardEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Entity/CardEntity.java" title="CardEntity.java" tooltip="JSanguosha/src/Game/Entity/CardEntity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Entity/CardEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="281" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlotEntity.java" partName="CardSlotEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Entity/CardSlotEntity.java" title="CardSlotEntity.java" tooltip="JSanguosha/src/Game/Entity/CardSlotEntity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Entity/CardSlotEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="252" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" partName="Entity.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Entity/Entity.java" title="Entity.java" tooltip="JSanguosha/src/Game/Entity/Entity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Entity/Entity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="676" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TypeCardSlot.java" partName="TypeCardSlot.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Type/TypeCardSlot.java" title="TypeCardSlot.java" tooltip="JSanguosha/src/Game/Type/TypeCardSlot.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Type/TypeCardSlot.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="66" selectionOffset="65" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPackage.java" partName="TestPackage.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/TestPackage.java" title="TestPackage.java" tooltip="JSanguosha/src/Test/TestPackage.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/TestPackage.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="43" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardDodge.java" partName="CardDodge.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/CardDodge.java" title="CardDodge.java" tooltip="JSanguosha/src/Test/CardDodge.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/CardDodge.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="298" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardRole1v1.java" partName="CardRole1v1.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/CardRole1v1.java" title="CardRole1v1.java" tooltip="JSanguosha/src/Test/CardRole1v1.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/CardRole1v1.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RuleClassical.java" partName="RuleClassical.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/RuleClassical.java" title="RuleClassical.java" tooltip="JSanguosha/src/Test/RuleClassical.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/RuleClassical.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="344" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RuleOnPlay.java" partName="RuleOnPlay.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/RuleOnPlay.java" title="RuleOnPlay.java" tooltip="JSanguosha/src/Test/RuleOnPlay.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/RuleOnPlay.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="584" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedType.java" partName="LinkedType.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Type/LinkedType.java" title="LinkedType.java" tooltip="JSanguosha/src/Game/Type/LinkedType.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Type/LinkedType.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPlayerManager.java" partName="TestPlayerManager.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/TestPlayerManager.java" title="TestPlayerManager.java" tooltip="JSanguosha/src/Test/TestPlayerManager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/TestPlayerManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="194" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPlayer.java" partName="TestPlayer.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/TestPlayer.java" title="TestPlayer.java" tooltip="JSanguosha/src/Test/TestPlayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/TestPlayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="857" selectionTopPixel="31"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StagedGameEvent.java" partName="StagedGameEvent.java" path="T:/Game/JSanguosha/JSanguosha/src/GameEvent/StagedGameEvent.java" title="StagedGameEvent.java" tooltip="JSanguosha/src/GameEvent/StagedGameEvent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/GameEvent/StagedGameEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="823" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CommandAction.java" partName="CommandAction.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/CommandAction.java" title="CommandAction.java" tooltip="JSanguosha/src/Test/CommandAction.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/CommandAction.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="797" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventDecision.java" partName="GameEventDecision.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/event/GameEventDecision.java" title="GameEventDecision.java" tooltip="JSanguosha/src/Test/event/GameEventDecision.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/event/GameEventDecision.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="414" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="ImageButton.class" partName="ImageButton.class" title="ImageButton.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.ImageButton" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(ImageButton.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1488" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Button.class" partName="Button.class" title="Button.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.Button" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(Button.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="82" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IRule.java" partName="IRule.java" path="T:/Game/JSanguosha/JSanguosha/src/GameEvent/IRule.java" title="IRule.java" tooltip="JSanguosha/src/GameEvent/IRule.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/GameEvent/IRule.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="96" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventTurnLoop.java" partName="GameEventTurnLoop.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/event/GameEventTurnLoop.java" title="GameEventTurnLoop.java" tooltip="JSanguosha/src/Test/event/GameEventTurnLoop.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/event/GameEventTurnLoop.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="710" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventPhrase.java" partName="GameEventPhrase.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/event/GameEventPhrase.java" title="GameEventPhrase.java" tooltip="JSanguosha/src/Test/event/GameEventPhrase.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/event/GameEventPhrase.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="821" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEntity.java" partName="GameEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/Game/Entity/GameEntity.java" title="GameEntity.java" tooltip="JSanguosha/src/Game/Entity/GameEntity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Game/Entity/GameEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="386" selectionTopPixel="121"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventCardMove.java" partName="GameEventCardMove.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/event/GameEventCardMove.java" title="GameEventCardMove.java" tooltip="JSanguosha/src/Test/event/GameEventCardMove.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/event/GameEventCardMove.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1292" selectionTopPixel="16"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlash.java" partName="CardSlash.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/CardSlash.java" title="CardSlash.java" tooltip="JSanguosha/src/Test/CardSlash.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/CardSlash.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1347" selectionTopPixel="286"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="TextField.class" partName="TextField.class" title="TextField.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.TextField" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(TextField.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="3120" selectionTopPixel="45"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Stage.class" partName="Stage.class" title="Stage.class" tooltip="com.badlogic.gdx.scenes.scene2d.Stage" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d(Stage.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8581" selectionTopPixel="2700"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CollapsedPropertyView.java" partName="CollapsedPropertyView.java" path="T:/Game/JSanguosha/JSanguosha/src/Application/InGame/CollapsedPropertyView.java" title="CollapsedPropertyView.java" tooltip="JSanguosha/src/Application/InGame/CollapsedPropertyView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Application/InGame/CollapsedPropertyView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="577" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BackgroundView.java" partName="BackgroundView.java" path="T:/Game/JSanguosha/JSanguosha/src/Application/InGame/BackgroundView.java" title="BackgroundView.java" tooltip="JSanguosha/src/Application/InGame/BackgroundView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Application/InGame/BackgroundView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="320" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Image.class" partName="Image.class" title="Image.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.Image" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(Image.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="1939" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Selectable.java" partName="Selectable.java" path="T:/Game/JSanguosha/JSanguosha/src/Application/InGame/Selectable.java" title="Selectable.java" tooltip="JSanguosha/src/Application/InGame/Selectable.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Application/InGame/Selectable.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1624" selectionTopPixel="406"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestEnvironment.java" partName="TestEnvironment.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/TestEnvironment.java" title="TestEnvironment.java" tooltip="JSanguosha/src/Test/TestEnvironment.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/TestEnvironment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="584" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Graphics.class" partName="Graphics.class" title="Graphics.class" tooltip="com.badlogic.gdx.Graphics" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx(Graphics.class"/>
-<editorState selectionHorizontalPixel="37" selectionLength="12" selectionOffset="6330" selectionTopPixel="1785"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientControlView.java" partName="ClientControlView.java" path="T:/Game/JSanguosha/JSanguosha/src/Application/InGame/ClientControlView.java" title="ClientControlView.java" tooltip="JSanguosha/src/Application/InGame/ClientControlView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Application/InGame/ClientControlView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1252" selectionTopPixel="225"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPlayerEntity.java" partName="TestPlayerEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/TestPlayerEntity.java" title="TestPlayerEntity.java" tooltip="JSanguosha/src/Test/TestPlayerEntity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/TestPlayerEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="452" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="NinePatch.class" partName="NinePatch.class" title="NinePatch.class" tooltip="com.badlogic.gdx.graphics.g2d.NinePatch" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.graphics.g2d(NinePatch.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="11314" selectionTopPixel="3960"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JSanguosha.java" partName="JSanguosha.java" path="T:/Game/JSanguosha/JSanguosha/src/application/JSanguosha.java" title="JSanguosha.java" tooltip="JSanguosha/src/application/JSanguosha.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/JSanguosha.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2558" selectionTopPixel="331"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientControlView.java" partName="ClientControlView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/ClientControlView.java" title="ClientControlView.java" tooltip="JSanguosha/src/application/view/ClientControlView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/ClientControlView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1011" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CollapsedPropertyView.java" partName="CollapsedPropertyView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/CollapsedPropertyView.java" title="CollapsedPropertyView.java" tooltip="JSanguosha/src/application/view/CollapsedPropertyView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/CollapsedPropertyView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="38" selectionOffset="445" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DefaultSkin.java" partName="DefaultSkin.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/DefaultSkin.java" title="DefaultSkin.java" tooltip="JSanguosha/src/application/view/DefaultSkin.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/DefaultSkin.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="61" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityInfoLabel.java" partName="EntityInfoLabel.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/EntityInfoLabel.java" title="EntityInfoLabel.java" tooltip="JSanguosha/src/application/view/EntityInfoLabel.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/EntityInfoLabel.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="22" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntityView.java" partName="PlayerEntityView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/PlayerEntityView.java" title="PlayerEntityView.java" tooltip="JSanguosha/src/application/view/PlayerEntityView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/PlayerEntityView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="21" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Selectable.java" partName="Selectable.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/Selectable.java" title="Selectable.java" tooltip="JSanguosha/src/application/view/Selectable.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/Selectable.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1369" selectionTopPixel="46"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Action.java" partName="Action.java" path="T:/Game/JSanguosha/JSanguosha/src/game/Action.java" title="Action.java" tooltip="JSanguosha/src/game/Action.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/Action.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="456" selectionTopPixel="211"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActionSet.java" partName="ActionSet.java" path="T:/Game/JSanguosha/JSanguosha/src/game/ActionSet.java" title="ActionSet.java" tooltip="JSanguosha/src/game/ActionSet.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/ActionSet.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="341" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Environment.java" partName="Environment.java" path="T:/Game/JSanguosha/JSanguosha/src/game/Environment.java" title="Environment.java" tooltip="JSanguosha/src/game/Environment.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/Environment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="428" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICard.java" partName="ICard.java" path="T:/Game/JSanguosha/JSanguosha/src/game/ICard.java" title="ICard.java" tooltip="JSanguosha/src/game/ICard.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/ICard.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="62" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IEntityContainer.java" partName="IEntityContainer.java" path="T:/Game/JSanguosha/JSanguosha/src/game/IEntityContainer.java" title="IEntityContainer.java" tooltip="JSanguosha/src/game/IEntityContainer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/IEntityContainer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="56" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPackage.java" partName="IPackage.java" path="T:/Game/JSanguosha/JSanguosha/src/game/IPackage.java" title="IPackage.java" tooltip="JSanguosha/src/game/IPackage.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/IPackage.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="30" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPlayer.java" partName="IPlayer.java" path="T:/Game/JSanguosha/JSanguosha/src/game/IPlayer.java" title="IPlayer.java" tooltip="JSanguosha/src/game/IPlayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/IPlayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="213" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerManager.java" partName="PlayerManager.java" path="T:/Game/JSanguosha/JSanguosha/src/game/PlayerManager.java" title="PlayerManager.java" tooltip="JSanguosha/src/game/PlayerManager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/PlayerManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="257" selectionTopPixel="16"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" partName="Entity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/Entity.java" title="Entity.java" tooltip="JSanguosha/src/game/entity/Entity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/Entity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="221" selectionTopPixel="60"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEntity.java" partName="GameEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/GameEntity.java" title="GameEntity.java" tooltip="JSanguosha/src/game/entity/GameEntity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/GameEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="113" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedType.java" partName="LinkedType.java" path="T:/Game/JSanguosha/JSanguosha/src/game/type/LinkedType.java" title="LinkedType.java" tooltip="JSanguosha/src/game/type/LinkedType.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/type/LinkedType.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Type.java" partName="Type.java" path="T:/Game/JSanguosha/JSanguosha/src/game/type/Type.java" title="Type.java" tooltip="JSanguosha/src/game/type/Type.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/type/Type.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1658" selectionTopPixel="181"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEvent.java" partName="GameEvent.java" path="T:/Game/JSanguosha/JSanguosha/src/gameEvent/GameEvent.java" title="GameEvent.java" tooltip="JSanguosha/src/gameEvent/GameEvent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/gameEvent/GameEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="98" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventTree.java" partName="GameEventTree.java" path="T:/Game/JSanguosha/JSanguosha/src/gameEvent/GameEventTree.java" title="GameEventTree.java" tooltip="JSanguosha/src/gameEvent/GameEventTree.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/gameEvent/GameEventTree.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IRule.java" partName="IRule.java" path="T:/Game/JSanguosha/JSanguosha/src/gameEvent/IRule.java" title="IRule.java" tooltip="JSanguosha/src/gameEvent/IRule.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/gameEvent/IRule.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="35" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RuleRegistry.java" partName="RuleRegistry.java" path="T:/Game/JSanguosha/JSanguosha/src/gameEvent/RuleRegistry.java" title="RuleRegistry.java" tooltip="JSanguosha/src/gameEvent/RuleRegistry.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/gameEvent/RuleRegistry.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StagedGameEvent.java" partName="StagedGameEvent.java" path="T:/Game/JSanguosha/JSanguosha/src/gameEvent/StagedGameEvent.java" title="StagedGameEvent.java" tooltip="JSanguosha/src/gameEvent/StagedGameEvent.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/gameEvent/StagedGameEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="35" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardDodge.java" partName="CardDodge.java" path="T:/Game/JSanguosha/JSanguosha/src/test/CardDodge.java" title="CardDodge.java" tooltip="JSanguosha/src/test/CardDodge.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/CardDodge.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="30" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardRole1v1.java" partName="CardRole1v1.java" path="T:/Game/JSanguosha/JSanguosha/src/test/CardRole1v1.java" title="CardRole1v1.java" tooltip="JSanguosha/src/test/CardRole1v1.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/CardRole1v1.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RuleClassical.java" partName="RuleClassical.java" path="T:/Game/JSanguosha/JSanguosha/src/test/RuleClassical.java" title="RuleClassical.java" tooltip="JSanguosha/src/test/RuleClassical.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/RuleClassical.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="58" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RuleOnPlay.java" partName="RuleOnPlay.java" path="T:/Game/JSanguosha/JSanguosha/src/test/RuleOnPlay.java" title="RuleOnPlay.java" tooltip="JSanguosha/src/test/RuleOnPlay.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/RuleOnPlay.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="62" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestEnvironment.java" partName="TestEnvironment.java" path="T:/Game/JSanguosha/JSanguosha/src/test/TestEnvironment.java" title="TestEnvironment.java" tooltip="JSanguosha/src/test/TestEnvironment.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/TestEnvironment.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1297" selectionTopPixel="121"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPackage.java" partName="TestPackage.java" path="T:/Game/JSanguosha/JSanguosha/src/test/TestPackage.java" title="TestPackage.java" tooltip="JSanguosha/src/test/TestPackage.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/TestPackage.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPlayer.java" partName="TestPlayer.java" path="T:/Game/JSanguosha/JSanguosha/src/test/TestPlayer.java" title="TestPlayer.java" tooltip="JSanguosha/src/test/TestPlayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/TestPlayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1197" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPlayerEntity.java" partName="TestPlayerEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/test/TestPlayerEntity.java" title="TestPlayerEntity.java" tooltip="JSanguosha/src/test/TestPlayerEntity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/TestPlayerEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="62" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestPlayerManager.java" partName="TestPlayerManager.java" path="T:/Game/JSanguosha/JSanguosha/src/test/TestPlayerManager.java" title="TestPlayerManager.java" tooltip="JSanguosha/src/test/TestPlayerManager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/TestPlayerManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="133" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventCardMove.java" partName="GameEventCardMove.java" path="T:/Game/JSanguosha/JSanguosha/src/test/event/GameEventCardMove.java" title="GameEventCardMove.java" tooltip="JSanguosha/src/test/event/GameEventCardMove.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/event/GameEventCardMove.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="36" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventPhrase.java" partName="GameEventPhrase.java" path="T:/Game/JSanguosha/JSanguosha/src/test/event/GameEventPhrase.java" title="GameEventPhrase.java" tooltip="JSanguosha/src/test/event/GameEventPhrase.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/event/GameEventPhrase.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="36" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventPlay.java" partName="GameEventPlay.java" path="T:/Game/JSanguosha/JSanguosha/src/test/event/GameEventPlay.java" title="GameEventPlay.java" tooltip="JSanguosha/src/test/event/GameEventPlay.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/event/GameEventPlay.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="325" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventTurnLoop.java" partName="GameEventTurnLoop.java" path="T:/Game/JSanguosha/JSanguosha/src/test/event/GameEventTurnLoop.java" title="GameEventTurnLoop.java" tooltip="JSanguosha/src/test/event/GameEventTurnLoop.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/event/GameEventTurnLoop.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="58" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientControlManager.java" partName="ClientControlManager.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/ClientControlManager.java" title="ClientControlManager.java" tooltip="JSanguosha/src/application/view/ClientControlManager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/ClientControlManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="32" selectionOffset="631" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityUpdate.java" partName="EntityUpdate.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/EntityUpdate.java" title="EntityUpdate.java" tooltip="JSanguosha/src/application/network/EntityUpdate.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/EntityUpdate.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1138" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntityUpdate.java" partName="PlayerEntityUpdate.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/PlayerEntityUpdate.java" title="PlayerEntityUpdate.java" tooltip="JSanguosha/src/application/network/PlayerEntityUpdate.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/PlayerEntityUpdate.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="613" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlotEntityUpdate.java" partName="CardSlotEntityUpdate.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/CardSlotEntityUpdate.java" title="CardSlotEntityUpdate.java" tooltip="JSanguosha/src/application/network/CardSlotEntityUpdate.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/CardSlotEntityUpdate.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="590" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SelectionRequest.java" partName="SelectionRequest.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/SelectionRequest.java" title="SelectionRequest.java" tooltip="JSanguosha/src/application/network/SelectionRequest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/SelectionRequest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="93" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConfirmationRequest.java" partName="ConfirmationRequest.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/ConfirmationRequest.java" title="ConfirmationRequest.java" tooltip="JSanguosha/src/application/network/ConfirmationRequest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/ConfirmationRequest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="197" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginRequest.java" partName="LoginRequest.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/LoginRequest.java" title="LoginRequest.java" tooltip="JSanguosha/src/application/network/LoginRequest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/LoginRequest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="305" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Connection.class" partName="Connection.class" title="Connection.class" tooltip="com.esotericsoftware.kryonet.Connection" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Connection.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7262" selectionTopPixel="3840"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Socket.class" partName="Socket.class" title="Socket.class" tooltip="java.net.Socket" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/S:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.net(Socket.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="11755" selectionTopPixel="5160"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="InetAddress.class" partName="InetAddress.class" title="InetAddress.class" tooltip="java.net.InetAddress" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/S:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.net(InetAddress.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="708" selectionTopPixel="210"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Search.java" partName="Search.java" path="T:/Game/JSanguosha/SXY/src/search/Search.java" title="Search.java" tooltip="SXY/src/search/Search.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SXY/src/search/Search.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1005" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" partName="BFS.java" path="T:/Game/JSanguosha/SXY/src/search/BFS.java" title="BFS.java" tooltip="SXY/src/search/BFS.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SXY/src/search/BFS.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="423" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="INetworkHandler.java" partName="INetworkHandler.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/handlers/INetworkHandler.java" title="INetworkHandler.java" tooltip="JSanguosha/src/application/network/handlers/INetworkHandler.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/handlers/INetworkHandler.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="282" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Server.class" partName="Server.class" title="Server.class" tooltip="com.esotericsoftware.kryonet.Server" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Server.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="1942" selectionTopPixel="750"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConnectionView.java" partName="ConnectionView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/ConnectionView.java" title="ConnectionView.java" tooltip="JSanguosha/src/application/view/ConnectionView.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/ConnectionView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="788" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkPlayer.java" partName="NetworkPlayer.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/NetworkPlayer.java" title="NetworkPlayer.java" tooltip="JSanguosha/src/application/network/NetworkPlayer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/NetworkPlayer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2000" selectionTopPixel="571"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkManager.java" partName="NetworkManager.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/NetworkManager.java" title="NetworkManager.java" tooltip="JSanguosha/src/application/network/NetworkManager.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/NetworkManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3120" selectionTopPixel="1156"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityUpdateHandler.java" partName="EntityUpdateHandler.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/handlers/EntityUpdateHandler.java" title="EntityUpdateHandler.java" tooltip="JSanguosha/src/application/network/handlers/EntityUpdateHandler.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/handlers/EntityUpdateHandler.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="604" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityDeployHandler.java" partName="EntityDeployHandler.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/handlers/EntityDeployHandler.java" title="EntityDeployHandler.java" tooltip="JSanguosha/src/application/network/handlers/EntityDeployHandler.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/handlers/EntityDeployHandler.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1334" selectionTopPixel="31"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="829" selectionTopPixel="90"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityViewManager.java" partName="EntityViewManager.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/EntityViewManager.java" title="EntityViewManager.java" tooltip="JSanguosha/src/application/view/EntityViewManager.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/EntityViewManager.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="827" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1599" selectionTopPixel="543"/>
 </editor>
-<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JSanguoshaDesktop.java" partName="JSanguoshaDesktop.java" path="T:/Game/JSanguosha/JSanguosha-desktop/src/JSanguoshaDesktop.java" title="JSanguoshaDesktop.java" tooltip="JSanguosha-desktop/src/JSanguoshaDesktop.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha-desktop/src/JSanguoshaDesktop.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityRemoveHandler.java" partName="EntityRemoveHandler.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/handlers/EntityRemoveHandler.java" title="EntityRemoveHandler.java" tooltip="JSanguosha/src/application/network/handlers/EntityRemoveHandler.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/handlers/EntityRemoveHandler.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="696" selectionTopPixel="78"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityInfoLabel.java" partName="EntityInfoLabel.java" path="T:/Game/JSanguosha/JSanguosha/src/Application/InGame/EntityInfoLabel.java" title="EntityInfoLabel.java" tooltip="JSanguosha/src/Application/InGame/EntityInfoLabel.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Application/InGame/EntityInfoLabel.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="999" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityDeployHandler.java" partName="EntityDeployHandler.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/handlers/EntityDeployHandler.java" title="EntityDeployHandler.java" tooltip="JSanguosha/src/application/network/handlers/EntityDeployHandler.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/handlers/EntityDeployHandler.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1155" selectionTopPixel="663"/>
 </editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Label.class" partName="Label.class" title="Label.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.Label" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(Label.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="2331" selectionTopPixel="180"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityUpdate.java" partName="EntityUpdate.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/EntityUpdate.java" title="EntityUpdate.java" tooltip="JSanguosha/src/application/network/EntityUpdate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/EntityUpdate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="1688" selectionTopPixel="600"/>
 </editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="ClickListener.class" partName="ClickListener.class" title="ClickListener.class" tooltip="com.badlogic.gdx.scenes.scene2d.utils.ClickListener" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.utils(ClickListener.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="62" selectionOffset="3974" selectionTopPixel="900"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IEntityView.java" partName="IEntityView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/IEntityView.java" title="IEntityView.java" tooltip="JSanguosha/src/application/view/IEntityView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/IEntityView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="76" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DefaultSkin.java" partName="DefaultSkin.java" path="T:/Game/JSanguosha/JSanguosha/src/Application/InGame/DefaultSkin.java" title="DefaultSkin.java" tooltip="JSanguosha/src/Application/InGame/DefaultSkin.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Application/InGame/DefaultSkin.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1119" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntityView.java" partName="PlayerEntityView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/PlayerEntityView.java" title="PlayerEntityView.java" tooltip="JSanguosha/src/application/view/PlayerEntityView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/PlayerEntityView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="548" selectionTopPixel="135"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEvent.java" partName="GameEvent.java" path="T:/Game/JSanguosha/JSanguosha/src/GameEvent/GameEvent.java" title="GameEvent.java" tooltip="JSanguosha/src/GameEvent/GameEvent.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/GameEvent/GameEvent.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="800" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CollapsedPropertyView.java" partName="CollapsedPropertyView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/CollapsedPropertyView.java" title="CollapsedPropertyView.java" tooltip="JSanguosha/src/application/view/CollapsedPropertyView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/CollapsedPropertyView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1393" selectionTopPixel="0"/>
 </editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Input$Buttons.class" partName="Input$Buttons.class" title="Input$Buttons.class" tooltip="com.badlogic.gdx.Input$Buttons" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx(Input$Buttons.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="2014" selectionTopPixel="540"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlotEntityUpdate.java" partName="CardSlotEntityUpdate.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/CardSlotEntityUpdate.java" title="CardSlotEntityUpdate.java" tooltip="JSanguosha/src/application/network/CardSlotEntityUpdate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/CardSlotEntityUpdate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="189" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActionPlay.java" partName="ActionPlay.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/action/ActionPlay.java" title="ActionPlay.java" tooltip="JSanguosha/src/Test/action/ActionPlay.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/action/ActionPlay.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="596" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventPlay.java" partName="GameEventPlay.java" path="T:/Game/JSanguosha/JSanguosha/src/Test/event/GameEventPlay.java" title="GameEventPlay.java" tooltip="JSanguosha/src/Test/event/GameEventPlay.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Test/event/GameEventPlay.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="620" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Widget.class" partName="Widget.class" title="Widget.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.Widget" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(Widget.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="1748" selectionTopPixel="631"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="SpriteBatch.class" partName="SpriteBatch.class" title="SpriteBatch.class" tooltip="com.badlogic.gdx.graphics.g2d.SpriteBatch" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.graphics.g2d(SpriteBatch.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="16" selectionOffset="34889" selectionTopPixel="15855"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Mesh.class" partName="Mesh.class" title="Mesh.class" tooltip="com.badlogic.gdx.graphics.Mesh" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.graphics(Mesh.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="17185" selectionTopPixel="5355"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="GL10.class" partName="GL10.class" title="GL10.class" tooltip="com.badlogic.gdx.graphics.GL10" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.graphics(GL10.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="2266" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Files.class" partName="Files.class" title="Files.class" tooltip="com.badlogic.gdx.Files" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx(Files.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="2917" selectionTopPixel="90"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Gdx.class" partName="Gdx.class" title="Gdx.class" tooltip="com.badlogic.gdx.Gdx" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx(Gdx.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="5" selectionOffset="1966" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntityView.java" partName="PlayerEntityView.java" path="T:/Game/JSanguosha/JSanguosha/src/Application/InGame/PlayerEntityView.java" title="PlayerEntityView.java" tooltip="JSanguosha/src/Application/InGame/PlayerEntityView.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/Application/InGame/PlayerEntityView.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="518" selectionTopPixel="0"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Label$LabelStyle.class" partName="Label$LabelStyle.class" title="Label$LabelStyle.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(Label$LabelStyle.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="9756" selectionTopPixel="3750"/>
-</editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Button$ButtonStyle.class" partName="Button$ButtonStyle.class" title="Button$ButtonStyle.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(Button$ButtonStyle.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="7541" selectionTopPixel="3196"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ActionFilter.java" partName="ActionFilter.java" path="T:/Game/JSanguosha/JSanguosha/src/game/ActionFilter.java" title="ActionFilter.java" tooltip="JSanguosha/src/game/ActionFilter.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/ActionFilter.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="626" selectionTopPixel="495"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlash.java" partName="CardSlash.java" path="T:/Game/JSanguosha/JSanguosha/src/test/CardSlash.java" title="CardSlash.java" tooltip="JSanguosha/src/test/CardSlash.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/CardSlash.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1960" selectionTopPixel="406"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardEntity.java" partName="CardEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/CardEntity.java" title="CardEntity.java" tooltip="JSanguosha/src/game/entity/CardEntity.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/CardEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="109" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntity.java" partName="PlayerEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/PlayerEntity.java" title="PlayerEntity.java" tooltip="JSanguosha/src/game/entity/PlayerEntity.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/PlayerEntity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="66" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlotEntity.java" partName="CardSlotEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/CardSlotEntity.java" title="CardSlotEntity.java" tooltip="JSanguosha/src/game/entity/CardSlotEntity.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlotEntity.java" partName="CardSlotEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/CardSlotEntity.java" title="CardSlotEntity.java" tooltip="JSanguosha/src/game/entity/CardSlotEntity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/CardSlotEntity.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="99" selectionTopPixel="0"/>
 </editor>
-<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Listener.class" partName="Listener.class" title="Listener.class" tooltip="com.esotericsoftware.kryonet.Listener" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Listener.class"/>
+<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventCardMove.java" partName="GameEventCardMove.java" path="T:/Game/JSanguosha/JSanguosha/src/test/event/GameEventCardMove.java" title="GameEventCardMove.java" tooltip="JSanguosha/src/test/event/GameEventCardMove.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/event/GameEventCardMove.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="770" selectionTopPixel="150"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkManager.java" partName="NetworkManager.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/NetworkManager.java" title="NetworkManager.java" tooltip="JSanguosha/src/application/network/NetworkManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/NetworkManager.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4633" selectionTopPixel="2988"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConnectionView.java" partName="ConnectionView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/ConnectionView.java" title="ConnectionView.java" tooltip="JSanguosha/src/application/view/ConnectionView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/ConnectionView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1491" selectionTopPixel="0"/>
+</editor>
+<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Image.class" partName="Image.class" title="Image.class" tooltip="com.badlogic.gdx.scenes.scene2d.ui.Image" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.scenes.scene2d.ui(Image.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="4" selectionOffset="4129" selectionTopPixel="495"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardEntityUpdate.java" partName="CardEntityUpdate.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/CardEntityUpdate.java" title="CardEntityUpdate.java" tooltip="JSanguosha/src/application/network/CardEntityUpdate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/CardEntityUpdate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="518" selectionTopPixel="48"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardEntity.java" partName="CardEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/CardEntity.java" title="CardEntity.java" tooltip="JSanguosha/src/game/entity/CardEntity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/CardEntity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="605" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Entity.java" partName="Entity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/Entity.java" title="Entity.java" tooltip="JSanguosha/src/game/entity/Entity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/Entity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="518" selectionTopPixel="135"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestEnvironment.java" partName="TestEnvironment.java" path="T:/Game/JSanguosha/JSanguosha/src/test/TestEnvironment.java" title="TestEnvironment.java" tooltip="JSanguosha/src/test/TestEnvironment.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/TestEnvironment.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1624" selectionTopPixel="573"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntityUpdate.java" partName="PlayerEntityUpdate.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/PlayerEntityUpdate.java" title="PlayerEntityUpdate.java" tooltip="JSanguosha/src/application/network/PlayerEntityUpdate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/PlayerEntityUpdate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="742" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityDeployRequest.java" partName="EntityDeployRequest.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/EntityDeployRequest.java" title="EntityDeployRequest.java" tooltip="JSanguosha/src/application/network/EntityDeployRequest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/EntityDeployRequest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="378" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SelectionRequest.java" partName="SelectionRequest.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/SelectionRequest.java" title="SelectionRequest.java" tooltip="JSanguosha/src/application/network/SelectionRequest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/SelectionRequest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="167" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientControlView.java" partName="ClientControlView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/ClientControlView.java" title="ClientControlView.java" tooltip="JSanguosha/src/application/view/ClientControlView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/ClientControlView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2920" selectionTopPixel="1203"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardEntityView.java" partName="CardEntityView.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/CardEntityView.java" title="CardEntityView.java" tooltip="JSanguosha/src/application/view/CardEntityView.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/CardEntityView.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="646" selectionTopPixel="198"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientControlManager.java" partName="ClientControlManager.java" path="T:/Game/JSanguosha/JSanguosha/src/application/view/ClientControlManager.java" title="ClientControlManager.java" tooltip="JSanguosha/src/application/view/ClientControlManager.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/view/ClientControlManager.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityDeployRequest.java" partName="EntityDeployRequest.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/EntityDeployRequest.java" title="EntityDeployRequest.java" tooltip="JSanguosha/src/application/network/EntityDeployRequest.java" workbook="org.eclipse.ui.internal.EditorStack@57502b64">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/EntityDeployRequest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="319" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardDodge.java" partName="CardDodge.java" path="T:/Game/JSanguosha/JSanguosha/src/test/CardDodge.java" title="CardDodge.java" tooltip="JSanguosha/src/test/CardDodge.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/CardDodge.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="138" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlash.java" partName="CardSlash.java" path="T:/Game/JSanguosha/JSanguosha/src/test/CardSlash.java" title="CardSlash.java" tooltip="JSanguosha/src/test/CardSlash.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/CardSlash.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="391" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Environment.java" partName="Environment.java" path="T:/Game/JSanguosha/JSanguosha/src/game/Environment.java" title="Environment.java" tooltip="JSanguosha/src/game/Environment.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/Environment.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="138" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Type.java" partName="Type.java" path="T:/Game/JSanguosha/JSanguosha/src/game/type/Type.java" title="Type.java" tooltip="JSanguosha/src/game/type/Type.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/type/Type.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="30" selectionOffset="1740" selectionTopPixel="603"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntity.java" partName="PlayerEntity.java" path="T:/Game/JSanguosha/JSanguosha/src/game/entity/PlayerEntity.java" title="PlayerEntity.java" tooltip="JSanguosha/src/game/entity/PlayerEntity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/entity/PlayerEntity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="305" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkPlayer.java" partName="NetworkPlayer.java" path="T:/Game/JSanguosha/JSanguosha/src/application/network/NetworkPlayer.java" title="NetworkPlayer.java" tooltip="JSanguosha/src/application/network/NetworkPlayer.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/application/network/NetworkPlayer.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="1134" selectionTopPixel="510"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventPhrase.java" partName="GameEventPhrase.java" path="T:/Game/JSanguosha/JSanguosha/src/test/event/GameEventPhrase.java" title="GameEventPhrase.java" tooltip="JSanguosha/src/test/event/GameEventPhrase.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/test/event/GameEventPhrase.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="774" selectionTopPixel="195"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEvent.java" partName="GameEvent.java" path="T:/Game/JSanguosha/JSanguosha/src/gameEvent/GameEvent.java" title="GameEvent.java" tooltip="JSanguosha/src/gameEvent/GameEvent.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/gameEvent/GameEvent.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="666" selectionTopPixel="0"/>
+</editor>
+<editor id="net.sf.jadclipse.JadclipseClassFileEditor" name="Client.class" partName="Client.class" title="Client.class" tooltip="com.esotericsoftware.kryonet.Client" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Client.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedType.java" partName="LinkedType.java" path="T:/Game/JSanguosha/JSanguosha/src/game/type/LinkedType.java" title="LinkedType.java" tooltip="JSanguosha/src/game/type/LinkedType.java" workbook="org.eclipse.ui.internal.EditorStack@79e30c3d">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/type/LinkedType.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="103" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringType.java" partName="StringType.java" path="T:/Game/JSanguosha/JSanguosha/src/game/type/StringType.java" title="StringType.java" tooltip="JSanguosha/src/game/type/StringType.java" workbook="org.eclipse.ui.internal.EditorStack@79e30c3d">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/JSanguosha/src/game/type/StringType.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="383" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="3" org.eclipse.search.resultpage.layout="2"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="2" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -703,6 +230,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings (2 items)"/>
 </expanded>
@@ -745,6 +273,9 @@
 </xmlDefinedFilters>
 </customFilters>
 </viewState>
+</view>
+<view id="org.eclipse.jdt.debug.ui.DisplayView" partName="Display">
+<viewState/>
 </view>
 <view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
@@ -830,7 +361,7 @@
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.search.ui.views.SearchView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
@@ -860,8 +391,8 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.17462039" ratioLeft="322" ratioRight="1522" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.52263373" ratioLeft="508" ratioRight="464" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -931,47 +462,65 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.jdt.debug.ui.DisplayView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7497436" ratioLeft="731" ratioRight="244" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7497436" ratioLeft="731" ratioRight="244" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="Display"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.4487004" ratioLeft="328" ratioRight="403" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.74986464" ratioLeft="1385" ratioRight="462" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.4997293" ratioLeft="923" ratioRight="924" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.4997293" ratioLeft="923" ratioRight="924" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -983,175 +532,172 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/game/Environment.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/game/type/Type.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/game/type/TypeMeta.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/view/BackgroundView.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/view/CardEntityView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/handlers/EntityUpdateHandler.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/EntityUpdate.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/test/event/GameEventCardMove.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/game/type/StringType.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/game/entity/Entity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/handlers/EntityRemoveHandler.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/test/event/GameEventPhrase.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/gameEvent/GameEvent.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/handlers/EntityDeployHandler.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.graphics.g2d(TextureRegion.class"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.graphics(Texture.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha-desktop/src/JSanguoshaDesktop.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/test/TestEnvironment.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/handlers/INetworkHandler.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/NetworkManager.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/JSanguosha.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/view/EntityViewManager.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/CardEntityUpdate.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Client.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/view/IEntityView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/view/CardEntityView.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/view/CollapsedPropertyView.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/view/ClientControlView.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/PlayerEntityUpdate.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/CardSlotEntityUpdate.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/game/IPlayer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/application/network/NetworkPlayer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/JSanguosha/src/test/TestPlayer.java"/>
 </editors>
-<item historyLabel="TypeMeta.java" index="2">
-<position info="not_deleted" x="119" y="8"/>
+<item historyLabel="Entity.java" index="4">
+<position info="not_deleted" x="518" y="0"/>
 </item>
-<item historyLabel="TypeMeta.java" index="2">
-<position info="not_deleted" x="828" y="0"/>
+<item historyLabel="EntityUpdate.java" index="1">
+<position info="not_deleted" x="860" y="0"/>
 </item>
-<item historyLabel="Type.java" index="1">
-<position info="not_deleted" x="1658" y="0"/>
+<item historyLabel="EntityRemoveHandler.java" index="5">
+<position info="not_deleted" x="696" y="6"/>
 </item>
-<item historyLabel="Environment.java" index="0">
-<position info="not_deleted" x="138" y="11"/>
+<item historyLabel="EntityUpdateHandler.java" index="0">
+<position info="not_deleted" x="656" y="0"/>
 </item>
-<item historyLabel="BackgroundView.java" index="3">
-<position info="not_deleted" x="9" y="0"/>
+<item historyLabel="GameEventPhrase.java" index="6">
+<position info="not_deleted" x="740" y="42"/>
 </item>
-<item historyLabel="CardEntityView.java" index="4">
-<position info="not_deleted" x="386" y="0"/>
+<item historyLabel="GameEvent.java" index="7">
+<position info="not_deleted" x="666" y="19"/>
 </item>
-<item historyLabel="EntityDeployHandler.java" index="5">
-<position info="not_deleted" x="1334" y="0"/>
+<item historyLabel="GameEventPhrase.java" index="6">
+<position info="not_deleted" x="740" y="42"/>
 </item>
-<item historyLabel="CardEntityView.java" index="4">
-<position info="not_deleted" x="480" y="10"/>
+<item historyLabel="GameEvent.java" index="7">
+<position info="not_deleted" x="666" y="19"/>
 </item>
-<item historyLabel="BackgroundView.java" index="3">
-<position info="not_deleted" x="9" y="0"/>
+<item historyLabel="GameEventPhrase.java" index="6">
+<position info="not_deleted" x="774" y="0"/>
 </item>
-<item historyLabel="CardEntityView.java" index="4">
-<position info="not_deleted" x="480" y="10"/>
+<item historyLabel="GameEventCardMove.java" index="2">
+<position info="not_deleted" x="671" y="4"/>
 </item>
-<item historyLabel="EntityDeployHandler.java" index="5">
-<position info="not_deleted" x="1334" y="0"/>
+<item historyLabel="EntityUpdateHandler.java" index="0">
+<position info="not_deleted" x="656" y="0"/>
 </item>
-<item historyLabel="TypeMeta.java" index="2">
-<position info="not_deleted" x="238" y="0"/>
+<item historyLabel="EntityDeployHandler.java" index="8">
+<position info="not_deleted" x="1155" y="0"/>
 </item>
-<item historyLabel="TextureRegion.class" index="6">
-<position info="not_deleted" x="1113" y="13"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1400" y="68"/>
 </item>
-<item historyLabel="TextureRegion.class" index="6">
-<position info="not_deleted" x="1140" y="0"/>
+<item historyLabel="GameEventCardMove.java" index="2">
+<position info="not_deleted" x="1190" y="7"/>
 </item>
-<item historyLabel="Texture.class" index="7">
-<position info="not_deleted" x="82" y="0"/>
+<item historyLabel="EntityUpdateHandler.java" index="0">
+<position info="not_deleted" x="832" y="0"/>
 </item>
-<item historyLabel="Texture.class" index="7">
-<position info="not_deleted" x="8428" y="4"/>
+<item historyLabel="CardEntityUpdate.java" index="10">
+<position info="not_deleted" x="518" y="0"/>
 </item>
-<item historyLabel="Texture.class" index="7">
-<position info="not_deleted" x="2902" y="7"/>
+<item historyLabel="EntityUpdate.java" index="1">
+<position info="not_deleted" x="347" y="6"/>
 </item>
-<item historyLabel="JSanguoshaDesktop.java" index="8">
-<position info="not_deleted" x="8" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1400" y="68"/>
 </item>
-<item historyLabel="TextureRegion.class" index="6">
-<position info="not_deleted" x="1133" y="0"/>
+<item historyLabel="Client.class" index="11">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TypeMeta.java" index="2">
-<position info="not_deleted" x="238" y="0"/>
+<item historyLabel="EntityUpdateHandler.java" index="0">
+<position info="not_deleted" x="830" y="0"/>
 </item>
-<item historyLabel="EntityDeployHandler.java" index="5">
-<position info="not_deleted" x="1334" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1297" y="16"/>
 </item>
-<item historyLabel="Environment.java" index="0">
-<position info="not_deleted" x="138" y="11"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1400" y="68"/>
 </item>
-<item historyLabel="TestEnvironment.java" index="9">
-<position info="not_deleted" x="142" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1398" y="0"/>
 </item>
-<item historyLabel="INetworkHandler.java" index="10">
-<position info="not_deleted" x="282" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1653" y="0"/>
 </item>
-<item historyLabel="NetworkManager.java" index="11">
-<position info="not_deleted" x="3205" y="0"/>
+<item historyLabel="EntityUpdateHandler.java" index="0">
+<position info="not_deleted" x="827" y="0"/>
 </item>
-<item historyLabel="NetworkManager.java" index="11">
-<position info="not_deleted" x="3120" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1536" y="0"/>
 </item>
-<item historyLabel="TestEnvironment.java" index="9">
-<position info="not_deleted" x="1297" y="0"/>
+<item historyLabel="IEntityView.java" index="12">
+<position info="not_deleted" x="76" y="14"/>
 </item>
-<item historyLabel="TestEnvironment.java" index="9">
-<position info="not_deleted" x="1272" y="1"/>
+<item historyLabel="CardEntityView.java" index="13">
+<position info="not_deleted" x="646" y="0"/>
 </item>
-<item historyLabel="TestEnvironment.java" index="9">
-<position info="not_deleted" x="1297" y="0"/>
+<item historyLabel="CollapsedPropertyView.java" index="14">
+<position info="not_deleted" x="1393" y="0"/>
 </item>
-<item historyLabel="JSanguosha.java" index="12">
-<position info="not_deleted" x="1579" y="0"/>
+<item historyLabel="ClientControlView.java" index="15">
+<position info="not_deleted" x="2395" y="0"/>
 </item>
-<item historyLabel="ClientControlView.java" index="13">
-<position info="not_deleted" x="1995" y="71"/>
+<item historyLabel="ClientControlView.java" index="15">
+<position info="not_deleted" x="2920" y="0"/>
 </item>
-<item historyLabel="ClientControlView.java" index="13">
-<position info="not_deleted" x="1011" y="0"/>
+<item historyLabel="CardEntityView.java" index="13">
+<position info="not_deleted" x="646" y="0"/>
 </item>
-<item historyLabel="JSanguosha.java" index="12">
-<position info="not_deleted" x="2463" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1536" y="0"/>
 </item>
-<item historyLabel="PlayerEntityUpdate.java" index="14">
-<position info="not_deleted" x="613" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="525" y="0"/>
 </item>
-<item historyLabel="CardSlotEntityUpdate.java" index="15">
-<position info="not_deleted" x="590" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position/>
 </item>
-<item historyLabel="JSanguosha.java" index="12">
-<position info="not_deleted" x="2558" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position/>
 </item>
-<item historyLabel="ClientControlView.java" index="13">
-<position info="not_deleted" x="1011" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position/>
 </item>
-<item historyLabel="PlayerEntityUpdate.java" index="14">
-<position info="not_deleted" x="613" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position/>
 </item>
-<item historyLabel="JSanguosha.java" index="12">
-<position info="not_deleted" x="2558" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position/>
 </item>
-<item historyLabel="ClientControlView.java" index="13">
-<position info="not_deleted" x="1011" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1536" y="0"/>
 </item>
-<item historyLabel="PlayerEntityUpdate.java" index="14">
-<position info="not_deleted" x="613" y="0"/>
+<item historyLabel="IEntityView.java" index="12">
+<position info="not_deleted" x="76" y="14"/>
 </item>
-<item historyLabel="CardSlotEntityUpdate.java" index="15">
-<position info="not_deleted" x="590" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="930" y="0"/>
 </item>
-<item historyLabel="TestEnvironment.java" index="9">
-<position info="not_deleted" x="1295" y="0"/>
+<item historyLabel="EntityUpdateHandler.java" index="0">
+<position info="not_deleted" x="829" y="0"/>
 </item>
-<item historyLabel="TestEnvironment.java" index="9">
-<position info="not_deleted" x="1216" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1603" y="0"/>
 </item>
-<item historyLabel="IPlayer.java" index="16">
-<position info="not_deleted" x="316" y="0"/>
+<item historyLabel="EntityUpdateHandler.java" index="0">
+<position info="not_deleted" x="829" y="0"/>
 </item>
-<item historyLabel="IPlayer.java" index="16">
-<position info="not_deleted" x="68" y="7"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1603" y="0"/>
 </item>
-<item historyLabel="NetworkPlayer.java" index="17">
-<position info="not_deleted" x="2000" y="0"/>
+<item historyLabel="EntityViewManager.java" index="9">
+<position info="not_deleted" x="1599" y="0"/>
 </item>
-<item historyLabel="TestPlayer.java" index="18">
-<position info="not_deleted" x="1197" y="0"/>
+<item historyLabel="GameEventPhrase.java" index="6">
+<position info="not_deleted" x="774" y="0"/>
 </item>
-<item historyLabel="NetworkPlayer.java" index="17">
-<position info="not_deleted" x="2000" y="0"/>
+<item historyLabel="GameEventCardMove.java" index="2">
+<position info="not_deleted" x="770" y="0"/>
 </item>
-<item active="true" historyLabel="TestEnvironment.java" index="9">
-<position info="not_deleted" x="1208" y="0"/>
+<item active="true" historyLabel="StringType.java" index="3">
+<position info="not_deleted" x="385" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -1173,50 +719,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="TextureRegion.class" tooltip="com.badlogic.gdx.graphics.g2d.TextureRegion">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/gdx.jar&lt;com.badlogic.gdx.graphics.g2d(TextureRegion.class"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="Client.class" tooltip="com.esotericsoftware.kryonet.Client">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Client.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TypeInfo.java" tooltip="JSanguosha/src/game/type/TypeInfo.java">
-<persistable path="/JSanguosha/src/game/type/TypeInfo.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEvent.java" tooltip="JSanguosha/src/gameEvent/GameEvent.java">
+<persistable path="/JSanguosha/src/gameEvent/GameEvent.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityViewManager.java" tooltip="JSanguosha/src/application/view/EntityViewManager.java">
-<persistable path="/JSanguosha/src/application/view/EntityViewManager.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityDeployHandler.java" tooltip="JSanguosha/src/application/network/handlers/EntityDeployHandler.java">
-<persistable path="/JSanguosha/src/application/network/handlers/EntityDeployHandler.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EntityUpdateHandler.java" tooltip="JSanguosha/src/application/network/handlers/EntityUpdateHandler.java">
-<persistable path="/JSanguosha/src/application/network/handlers/EntityUpdateHandler.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkManager.java" tooltip="JSanguosha/src/application/network/NetworkManager.java">
-<persistable path="/JSanguosha/src/application/network/NetworkManager.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameEventPhrase.java" tooltip="JSanguosha/src/test/event/GameEventPhrase.java">
+<persistable path="/JSanguosha/src/test/event/GameEventPhrase.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkPlayer.java" tooltip="JSanguosha/src/application/network/NetworkPlayer.java">
 <persistable path="/JSanguosha/src/application/network/NetworkPlayer.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConnectionView.java" tooltip="JSanguosha/src/application/view/ConnectionView.java">
-<persistable path="/JSanguosha/src/application/view/ConnectionView.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerEntity.java" tooltip="JSanguosha/src/game/entity/PlayerEntity.java">
+<persistable path="/JSanguosha/src/game/entity/PlayerEntity.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="Server.class" tooltip="com.esotericsoftware.kryonet.Server">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Server.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="StringType.java" tooltip="JSanguosha/src/game/type/StringType.java">
+<persistable path="/JSanguosha/src/game/type/StringType.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NetworkHandler.java" tooltip="JSanguosha/src/application/network/NetworkHandler.java">
-<persistable path="/JSanguosha/src/application/network/NetworkHandler.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinkedType.java" tooltip="JSanguosha/src/game/type/LinkedType.java">
+<persistable path="/JSanguosha/src/game/type/LinkedType.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BFS.java" tooltip="SXY/src/search/BFS.java">
-<persistable path="/SXY/src/search/BFS.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Environment.java" tooltip="JSanguosha/src/game/Environment.java">
+<persistable path="/JSanguosha/src/game/Environment.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Util.java" tooltip="SXY/src/search/Util.java">
-<persistable path="/SXY/src/search/Util.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Type.java" tooltip="JSanguosha/src/game/type/Type.java">
+<persistable path="/JSanguosha/src/game/type/Type.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="Listener.class" tooltip="com.esotericsoftware.kryonet.Listener">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/libs\/kryonet-2.18-all.jar&lt;com.esotericsoftware.kryonet(Listener.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardSlash.java" tooltip="JSanguosha/src/test/CardSlash.java">
+<persistable path="/JSanguosha/src/test/CardSlash.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="ArrayList.class" tooltip="java.util.ArrayList">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/S:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.util(ArrayList.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardDodge.java" tooltip="JSanguosha/src/test/CardDodge.java">
+<persistable path="/JSanguosha/src/test/CardDodge.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="net.sf.jadclipse.JadclipseClassFileEditor" name="InetAddress.class" tooltip="java.net.InetAddress">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JSanguosha/S:\/Program Files\/Java\/jre7\/lib\/rt.jar&lt;java.net(InetAddress.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientControlManager.java" tooltip="JSanguosha/src/application/view/ClientControlManager.java">
+<persistable path="/JSanguosha/src/application/view/ClientControlManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CardEntityView.java" tooltip="JSanguosha/src/application/view/CardEntityView.java">
+<persistable path="/JSanguosha/src/application/view/CardEntityView.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClientControlView.java" tooltip="JSanguosha/src/application/view/ClientControlView.java">
+<persistable path="/JSanguosha/src/application/view/ClientControlView.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SelectionRequest.java" tooltip="JSanguosha/src/application/network/SelectionRequest.java">
+<persistable path="/JSanguosha/src/application/network/SelectionRequest.java"/>
 </file>
 </mruList>
 </workbench>

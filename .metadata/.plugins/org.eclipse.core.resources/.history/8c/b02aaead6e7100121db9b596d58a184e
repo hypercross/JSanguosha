@@ -1,8 +1,0 @@
-package application.network;
-
-import game.entity.PlayerEntity;
-
-public class PlayerEntityUpdate extends EntityUpdate<PlayerEntity> {
-	int hp,maxHp,seatId;
-	boolean isAlive;
-}

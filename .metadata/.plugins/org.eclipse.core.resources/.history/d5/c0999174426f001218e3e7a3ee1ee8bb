@@ -1,8 +1,0 @@
-package Test;
-
-import Game.Entity.PlayerEntity;
-
-@SuppressWarnings("serial")
-public class TestPlayerEntity extends PlayerEntity{
-
-}

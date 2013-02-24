@@ -1,7 +1,0 @@
-package application.network;
-
-public class SelectionUpdate {
-	int[] enabled;
-	int[] disabled;
-	int[] selected;
-}

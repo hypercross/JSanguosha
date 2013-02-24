@@ -2973,3 +2973,11 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY org.eclipse.core.resources 2 10035 2013-02-23 11:16:01.749
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui.ide 4 4 2013-02-24 01:31:08.615
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2013-02-24 01:31:08.633
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-02-24 01:31:08.633
+!MESSAGE The project description file (.project) for 'TexturePacker2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
