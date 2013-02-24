@@ -1,0 +1,38 @@
+package application.network;
+
+import game.entity.Entity;
+
+public class EntityDeployRequest {
+	public int id;
+	public float x,y;
+	public EntityUpdate info;
+	public boolean viewable = true,isClient = false;
+	
+	public EntityDeployRequest(){}
+	
+	public EntityDeployRequest(Entity entity, float x, float y)
+	{
+		info = EntityUpdate.getUpdate(entity);
+		id = entity.id();
+		this.x = x;
+		this.y = y;
+	}
+	
+	public EntityDeployRequest(Entity entity, float x, float y, boolean viewable)
+	{
+		this(entity,x,y);
+		this.viewable = viewable;
+	}
+	
+	public EntityDeployRequest setClient()
+	{
+		isClient = true;
+		return this;
+	}
+	
+	public EntityDeployRequest setUnviewable()
+	{
+		viewable = false;
+		return this;
+	}
+}

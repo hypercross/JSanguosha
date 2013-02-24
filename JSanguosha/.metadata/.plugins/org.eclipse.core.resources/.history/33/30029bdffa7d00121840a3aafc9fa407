@@ -1,0 +1,42 @@
+package application.network;
+
+import game.entity.Entity;
+import game.entity.PlayerEntity;
+
+public class PlayerEntityUpdate extends EntityUpdate {
+	public PlayerEntityUpdate(PlayerEntity entity) {
+		super(entity);
+		hp = entity.hp;
+		maxHp = entity.maxHp;
+		seatId = entity.seatId;
+		isAlive = entity.isAlive;
+	}
+	
+	public PlayerEntityUpdate(PlayerEntity entity, boolean isClient)
+	{
+		this(entity);
+		this.isClient = isClient;
+	}
+
+	int hp,maxHp,seatId;
+	boolean isAlive,isClient;
+	
+	public void update(Entity entity)
+	{
+		PlayerEntity pe = (PlayerEntity)entity;
+		super.update(entity);
+		pe.hp = hp;
+		pe.maxHp = maxHp;
+		pe.seatId = seatId;
+	}
+	
+	public boolean isClient()
+	{
+		return isClient;
+	}
+
+	@Override
+	public Entity getNewEntity() {
+		return new PlayerEntity();
+	}
+}

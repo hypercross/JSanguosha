@@ -1,0 +1,8 @@
+package application.network;
+
+public class LoginRequest {
+	public static class LoginResponse
+	{
+		int code;
+	}
+}

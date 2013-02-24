@@ -1,0 +1,13 @@
+package search;
+
+public class BFS {
+
+	ArrayList<City> searchList = new ArrayList<City>();
+	ArrayList<City> finishList = new ArrayList<City>();
+	
+	public int cost; 
+	public int nodes;
+	public int time;
+	public String[] names;
+	
+}

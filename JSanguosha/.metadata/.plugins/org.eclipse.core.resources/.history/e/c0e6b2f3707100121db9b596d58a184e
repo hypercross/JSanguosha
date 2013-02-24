@@ -1,0 +1,11 @@
+package application.network;
+
+import game.entity.Entity;
+
+public class SelectionRequest {
+	int id;
+	public SelectionRequest(Entity entity)
+	{
+		id = entity.id;
+	}
+}

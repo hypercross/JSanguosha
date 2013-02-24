@@ -1,0 +1,28 @@
+package search;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.HashSet;
+
+
+public class BFS {
+	
+	static HashSet<City> cities = new HashSet<City>();
+	
+	public static void Main(String[] args) throws Exception
+	{
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		while(true)
+		{
+			String line = br.readLine();
+			if(line == null)break;
+			
+			String[] list = line.split(" ");
+			
+//			Util.City a = new Util.City(list[0]);
+//			if(!cities.contains())
+		}
+		
+	}
+}

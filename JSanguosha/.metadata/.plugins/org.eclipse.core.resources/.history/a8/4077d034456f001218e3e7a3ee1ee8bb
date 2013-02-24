@@ -1,0 +1,52 @@
+package Application.InGame;
+
+import javax.sound.sampled.Control.Type;
+
+import Game.ActionSet;
+import Game.Entity.PlayerEntity;
+
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.Group;
+import com.badlogic.gdx.scenes.scene2d.actions.MoveToAction;
+import com.badlogic.gdx.scenes.scene2d.ui.Button;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.utils.Array;
+
+public class ClientControlView extends Group{
+
+	PlayerEntityView pev;
+	Array<CardEntityView> hand = new Array<CardEntityView>();
+	Table controls;
+	
+	ActionSet request;
+	
+	public ClientControlView(PlayerEntity pe)
+	{		
+		this.addActor(pev = new PlayerEntityView(pe));
+		
+		this.addActor(controls = new Table());
+	}
+	
+	public void layout()
+	{
+		controls.setPosition(100,20);
+		pev.setPosition(getStage().getWidth() - pev.getWidth(), 0);
+	}
+	
+	public void deployButtons(Type[] types)
+	{
+		controls.clear();
+		for(Type atype : types)
+			controls.add(new Button(new Label(atype.toString(),DefaultSkin.instance), DefaultSkin.instance));
+	}
+	
+	private void animateTo(Actor actor, float x, float y)
+	{
+		MoveToAction mta = new MoveToAction();
+		mta.setDuration(0.3f);
+		mta.setPosition(x, y);
+		
+		actor.addAction(mta);
+	}
+}

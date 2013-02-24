@@ -1,0 +1,36 @@
+package game;
+
+import game.entity.CardEntity;
+import game.entity.CardSlotEntity;
+import game.entity.PlayerEntity;
+import game.type.Type;
+
+public class ActionSet {
+	
+	ActionFilter filter;
+	public Type[] types;
+	
+	public ActionSet(Type... type)
+	{
+		this.types = type;
+		this.filter = createFilter();
+	}
+
+	public boolean contains(Action action)
+	{
+		return filter.checkAll(action);
+	}
+	
+	public ActionFilter filter()
+	{
+		return filter;
+	}
+	
+	public static ActionFilter createFilter()
+	{
+		return new ActionFilter.Count(CardEntity.class)
+		.and(new ActionFilter.Count(PlayerEntity.class,0)
+		.and(new ActionFilter.Count(CardSlotEntity.class,0)));
+	}
+
+}

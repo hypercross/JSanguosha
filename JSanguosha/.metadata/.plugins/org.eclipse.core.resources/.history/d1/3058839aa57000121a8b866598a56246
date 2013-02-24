@@ -1,0 +1,19 @@
+package game;
+
+public class ActionSet {
+	
+	private Filter filter;
+
+	public boolean contains(Action action)
+	{
+		return filter.checkAll(action);
+	}
+	
+	public Filter filter()
+	{
+		if(this.filter == null)
+			filter = new Filter();
+		
+		return filter;
+	}
+}

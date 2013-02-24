@@ -1,0 +1,64 @@
+package search;
+
+import java.util.HashMap;
+
+public class City {
+	String name;
+	HashMap<City,Integer> distanceMap;
+
+	public int cost = Integer.MAX_VALUE; 
+	public int nodes = 0;
+	public long time = 0;
+	public City prev = null;
+
+	public City(String name)
+	{
+		this.name = name;
+		distanceMap = new HashMap<City,Integer>();
+	}
+
+	public int hashCode()
+	{
+		return name.hashCode();
+	}
+
+	public static void put(City a, City b, int dist)
+	{
+		a.distanceMap.put(b, dist);
+		b.distanceMap.put(a, dist);
+	}
+
+	public static int dist(City a,City b)
+	{
+		if(a.distanceMap.containsKey(b))
+			return a.distanceMap.get(b);
+		
+		return Integer.MAX_VALUE;
+	}
+	
+	public City[] neighbours()
+	{
+		return (City[]) distanceMap.keySet().toArray();
+	}
+	
+	public void init()
+	{
+		cost = Integer.MAX_VALUE;
+		nodes = 0;
+		time = 0;
+		prev = null;
+	}
+	
+	private String path()
+	{
+		if(prev == null)return name;
+		return prev.path() + "->" + name;
+	}
+	
+	public String toString()
+	{
+		return "name : " + name + "\n"
+			+  "cost : " + cost + "\n"
+			+  "path : " + path() + "\n";
+	}
+}

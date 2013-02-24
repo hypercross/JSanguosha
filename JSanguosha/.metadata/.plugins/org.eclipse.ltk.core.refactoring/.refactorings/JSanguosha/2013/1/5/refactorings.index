@@ -1,0 +1,7 @@
+1359308328089	Rename field 'EVENT_PHASE'
+1359308583804	Rename type 'GameEventTurn'
+1359309447009	Delete element
+1359322344977	Rename type 'IActionSet'
+1359405633212	Rename type 'ActionUse'
+1359414270323	Rename type 'IAction'
+1359418324601	Rename type 'ActionSetPutDodge'

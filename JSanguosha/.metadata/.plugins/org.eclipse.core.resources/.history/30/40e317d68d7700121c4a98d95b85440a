@@ -1,0 +1,43 @@
+package application.network;
+
+import game.type.Type;
+
+public class SelectionUpdate {
+	int[] enabled;
+	int[] selected;
+	Type[] replies;
+	
+	public boolean isEnabled(int id)
+	{
+		for(int i : enabled)
+			if(i == id)return true;
+		
+		for(int i : selected)
+			if(i == id)return true;
+		
+		return false;
+	}
+	
+	public boolean isSelected(int id)
+	{
+		for(int i : selected)
+			if(i == id)return true;
+		
+		return false;
+	}
+	
+	public void select(int... ids)
+	{
+		selected = ids;
+	}
+	
+	public void enable(int... enables)
+	{
+		enabled = enables;
+	}
+	
+	public void repliable(Type... atype)
+	{
+		replies = atype;
+	}
+}

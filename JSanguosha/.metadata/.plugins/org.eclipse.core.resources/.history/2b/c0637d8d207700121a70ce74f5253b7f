@@ -1,0 +1,41 @@
+package search;
+
+import java.util.ArrayList;
+
+public class BFS {
+	public static int query(City a,City b)
+	{
+		int count = 1;
+		ArrayList<City> searchList = new ArrayList<City>();
+		ArrayList<City> finishList = new ArrayList<City>();
+		
+		searchList.add(a);
+		
+		a.cost = 0;
+		a.time = System.nanoTime();
+		
+		while(!searchList.isEmpty())
+		{
+			City from = searchList.remove(0);
+			if(from.equals(b))break;
+			finishList.add(from);
+			count ++ ;
+			
+			for(City to : from.neighbours())
+			{
+				if(!finishList.contains(to) && !searchList.contains(to))searchList.add(to);
+				
+				if(to.cost > from.cost + City.dist(from, to))
+				{
+					to.cost = from.cost + City.dist(from, to);
+					to.time = System.nanoTime();
+					to.nodes = from.nodes + 1;
+					to.prev = from;
+				}
+			}
+		}
+		
+		return count;
+	}
+	
+}

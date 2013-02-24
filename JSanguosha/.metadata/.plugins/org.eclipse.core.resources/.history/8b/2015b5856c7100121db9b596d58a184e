@@ -1,0 +1,13 @@
+package application.network;
+
+import game.entity.Entity;
+
+public class EntityUpdate<T extends Entity> {
+	public String name;
+	public String type;
+	
+	public void Update(T entity)
+	{
+		entity.
+	}
+}

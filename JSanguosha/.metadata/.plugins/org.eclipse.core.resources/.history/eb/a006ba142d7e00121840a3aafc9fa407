@@ -1,0 +1,67 @@
+package application.network;
+
+import game.entity.CardEntity;
+import game.entity.CardSlotEntity;
+import game.entity.Entity;
+import game.entity.PlayerEntity;
+import game.type.LinkedType;
+import game.type.Type;
+
+public abstract class EntityUpdate {
+	public int id,parentId = -1,containerId = -1;
+	public String name;
+	public String type;
+	
+	public void update(Entity entity)
+	{
+		entity.setId(id);
+		entity.name = name;
+		entity.type = new Type(type);
+		if(parentId>=0)entity.setParent(Entity.list.get(parentId));
+		if(containerId>=0)
+			{
+				Entity.list.get(containerId).add(entity);
+				CardEntity ce = (CardEntity) entity;
+				ce.container = (CardSlotEntity) Entity.list.get(containerId); 
+			}
+	}
+	
+	public EntityUpdate()
+	{
+	}
+	
+	public EntityUpdate(Entity entity)
+	{
+		id = entity.id;
+		if(entity instanceof CardEntity)
+		{
+			CardEntity ce = (CardEntity) entity;
+			if(ce.container !=null)containerId = ce.container.id;
+		}else 
+			parentId = ((Entity)entity.parent()).id;
+		name = entity.name;
+		type = entity.type.fullName();
+	}
+	
+	public static EntityUpdate getUpdate(Entity entity)
+	{
+		if(entity instanceof CardEntity)
+			return new CardEntityUpdate((CardEntity) entity);
+		else if(entity instanceof CardSlotEntity)
+			return new CardSlotEntityUpdate((CardSlotEntity) entity);
+		else if(entity instanceof PlayerEntity)
+			return new PlayerEntityUpdate((PlayerEntity) entity);
+		
+		return null;
+	}
+	
+	public abstract Entity getNewEntity();
+	
+	public Entity createClientEntity()
+	{
+		Entity e = getNewEntity();
+		this.update(e);
+		Entity.list.set(e.id, e);
+		return e;
+	}
+}

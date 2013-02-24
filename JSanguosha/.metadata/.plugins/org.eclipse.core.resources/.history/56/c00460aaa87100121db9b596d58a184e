@@ -1,0 +1,14 @@
+package game;
+
+public interface IPlayer {
+
+	public int playerId();
+	
+	public void setPlayerId(int id);
+	
+	public void propose(ActionSet as);
+	
+	public boolean isReady();
+	
+	public <T extends Action> T getDecision();
+}

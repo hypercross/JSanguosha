@@ -1,0 +1,17 @@
+package application.network;
+
+import game.entity.Entity;
+
+public class EntityDeployRequest {
+	public int id;
+	int x,y;
+	EntityUpdate info;
+	
+	public EntityDeployRequest(Entity entity, int x, int y)
+	{
+		info = EntityUpdate.getUpdate(entity);
+		id = entity.id;
+		this.x = x;
+		this.y = y;
+	}
+}

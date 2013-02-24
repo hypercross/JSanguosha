@@ -1,0 +1,13 @@
+package application.network;
+
+public class LoginRequest {
+	public static class LoginResponse
+	{
+		boolean successful;
+		
+		LoginResponse(boolean successful)
+		{
+			this.successful = successful;
+		}
+	}
+}

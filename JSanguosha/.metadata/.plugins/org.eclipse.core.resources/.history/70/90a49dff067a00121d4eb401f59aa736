@@ -1,0 +1,11 @@
+package application.network.handlers;
+
+public interface NetworkHandler {
+
+	public boolean captured(Object obj);
+	
+	public Object handledWithResponse(Object obj);
+	
+	public void handled(Object obj);
+	
+}

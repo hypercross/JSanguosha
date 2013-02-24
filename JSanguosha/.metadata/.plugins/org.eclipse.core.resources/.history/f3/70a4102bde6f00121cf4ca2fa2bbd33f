@@ -1,0 +1,8 @@
+package game;
+
+import game.Type.Type;
+
+public interface IPackage {
+
+	ICard getDefinitionCard(Type td);
+}

@@ -1,0 +1,24 @@
+package application.network;
+
+import game.entity.PlayerEntity;
+
+public class PlayerEntityUpdate extends EntityUpdate {
+	public PlayerEntityUpdate(PlayerEntity entity) {
+		super(entity);
+		hp = entity.hp;
+		maxHp = entity.maxHp;
+		seatId = entity.seatId;
+		isAlive = entity.isAlive;
+	}
+
+	int hp,maxHp,seatId;
+	boolean isAlive;
+	
+	public void update(PlayerEntity entity)
+	{
+		super.update(entity);
+		entity.hp = hp;
+		entity.maxHp = maxHp;
+		entity.seatId = seatId;
+	}
+}

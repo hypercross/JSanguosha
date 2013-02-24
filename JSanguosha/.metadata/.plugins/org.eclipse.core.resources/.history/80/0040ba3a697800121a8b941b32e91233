@@ -1,0 +1,61 @@
+package application.network;
+
+import java.util.ArrayList;
+
+import game.Action;
+import game.ActionSet;
+import game.IPlayer;
+import game.entity.Entity;
+import game.entity.GameEntity;
+import game.entity.PlayerEntity;
+import game.type.LinkedType;
+import game.type.Type;
+
+public class NetworkPlayer implements IPlayer{
+
+	int playerID;
+	ActionSet as;
+	boolean available;
+	ArrayList<Integer> selection;
+	String actionType;
+	
+	@Override
+	public int playerID() {
+		return playerID;
+	}
+
+	@Override
+	public void setID(int id) {
+		playerID = id;
+	}
+
+	@Override
+	public void propose(ActionSet as) {
+		this.as = as;
+		available = false;
+		NetworkManager.instance.sendDecisionRequest(playerID, as);
+	}
+
+	@Override
+	public boolean isReady() {
+		return available;
+	}
+
+	@Override
+	public Action getDecision(GameEntity game) {
+		
+		Entity[] entities = new Entity[selection.size()];
+		for(int i =0;i<selection.size();i++)entities[i] = selection.get(i);
+		
+		return new Action(new LinkedType(actionType,Type.BASE_TYPE), 
+				(PlayerEntity)game.child("player" + playerID), 
+				(Entity[])selection.toArray());
+	}
+	
+	public NetworkPlayer(int id)
+	{
+		this.playerID = id;
+		available = false;
+		selection = new ArrayList<Entity>();
+	}
+}

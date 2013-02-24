@@ -1,0 +1,11 @@
+package application.network;
+
+import game.entity.Entity;
+
+public class InteractionRequest {
+	int id;
+	public InteractionRequest(Entity entity)
+	{
+		id = entity.id;
+	}
+}

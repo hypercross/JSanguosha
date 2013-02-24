@@ -1,0 +1,27 @@
+package game;
+
+import game.type.Type;
+
+public class ActionSet {
+	
+	private ActionFilter filter;
+	public Type[] types;
+	
+	public ActionSet(Type... type)
+	{
+		this.types = type;
+	}
+
+	public boolean contains(Action action)
+	{
+		return filter.checkAll(action);
+	}
+	
+	public ActionFilter filter()
+	{
+		if(this.filter == null)
+			filter = new ActionFilter();
+		
+		return filter;
+	}
+}

@@ -1,0 +1,32 @@
+package search;
+
+import java.util.ArrayList;
+
+public class BFS {
+
+	ArrayList<City> searchList = new ArrayList<City>();
+	ArrayList<City> finishList = new ArrayList<City>();
+	
+	public void query(City a,City b)
+	{	
+		searchList.clear();
+		searchList.add(a);
+		finishList.clear();
+		
+		a.cost = 0;
+		a.prev = null;
+		a.time = System.nanoTime();
+		a.nodes = 0;
+		
+		while(!searchList.isEmpty())
+		{
+			City from = searchList.remove(0);
+			
+			for(City to : from.neighbours())
+			{
+				if(to.cost)
+			}
+		}
+	}
+	
+}

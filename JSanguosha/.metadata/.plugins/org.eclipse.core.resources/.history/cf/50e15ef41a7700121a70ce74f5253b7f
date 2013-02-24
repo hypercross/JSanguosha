@@ -1,0 +1,9 @@
+package search;
+
+public class BFS {
+	
+	public static void Main(String[] args)
+	{
+		
+	}
+}
