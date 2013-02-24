@@ -27,6 +27,8 @@ public class DefaultSkin extends Skin{
 		ls.background = this.getDrawable("state");
 		this.add("label", ls);
 		
+		this.add("default", ls.font);
+		
 		ls = new LabelStyle();
 		ls.font = new BitmapFont();
 		this.add("default", ls);

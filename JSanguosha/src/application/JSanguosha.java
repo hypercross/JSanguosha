@@ -106,4 +106,9 @@ public void pause() {
 public void resume() {
 	
 }
+
+public static String version()
+{
+	return "Indev 20130224";
+}
 }
