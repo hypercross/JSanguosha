@@ -7,7 +7,7 @@ public abstract class StagedGameEvent extends GameEvent {
 
 	int[] stages;
 	
-	public StagedGameEvent(Type type, GameEntity theGame, int[] stages) {
+	public StagedGameEvent(Type type, GameEntity theGame, int... stages) {
 		super(type,theGame,0);
 		this.stages = stages;
 		triggerable = false;

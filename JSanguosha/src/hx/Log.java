@@ -16,7 +16,7 @@ public class Log {
 	static boolean alert = true;
 	static boolean severe = true;
 	static boolean fine = true;
-	static boolean trivil = false;	
+	static boolean trivil = true;	
 	
 	public static void suppress(Level level)
 	{

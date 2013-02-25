@@ -110,4 +110,14 @@ public class PlayerEntityView extends Group implements IEntityView{
 			cpv.updateProperty();
 		}
 	}
+
+	@Override
+	public Entity entity() {
+		return player;
+	}
+
+	@Override
+	public Selectable selectable() {
+		return selectable;
+	}
 }

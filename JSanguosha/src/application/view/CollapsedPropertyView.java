@@ -63,4 +63,14 @@ public abstract class CollapsedPropertyView <T extends Entity> extends Table imp
 			}
 		}
 	}
+	
+	public Entity entity()
+	{
+		return entity;
+	}
+	
+	public Selectable selectable()
+	{
+		return sel;
+	}
 }

@@ -1,5 +1,9 @@
 package test.event;
 
+import test.CardDodge;
+import test.event.decision.AskForDiscard;
+import game.ActionFilter;
+import game.ActionSet;
 import game.entity.CardEntity;
 import game.entity.GameEntity;
 import game.entity.PlayerEntity;
@@ -17,6 +21,9 @@ public class GameEventPhrase extends StagedGameEvent{
 		this.pe = pe;
 	}
 
+	/**
+	 * @return true if events are attached
+	 */
 	@Override
 	public boolean onResolve(int stage, GameEvent sub) {
 
@@ -37,8 +44,13 @@ public class GameEventPhrase extends StagedGameEvent{
 			
 			break;
 		case 4:
-			//discard
-			sub.attach(GameEventCardMove.discard((CardEntity) pe.child("hand").get(0)));
+			ActionSet as = new ActionSet();
+			as.types.add(Type.ACTION_CAST);
+			as.filter()	.and(new ActionFilter.ActionType(Type.ACTION_CAST))
+						.and(new ActionFilter.Count(CardEntity.class))
+						.and(new ActionFilter.Count(PlayerEntity.class,0));
+			
+			sub.attach(new AskForDiscard(pe, as));
 			return true;
 		case 5:
 			//end phrase

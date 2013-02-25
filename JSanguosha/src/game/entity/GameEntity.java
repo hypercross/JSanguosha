@@ -18,6 +18,8 @@ public class GameEntity extends Entity{
 	public GameEventTree events;
 	public RuleRegistry rules;
 	
+	public boolean waiting = false;
+	
 	public void init()
 	{
 		events = new GameEventTree();
@@ -72,6 +74,8 @@ public class GameEntity extends Entity{
 	
 	public void step()
 	{
+		if(waiting)return;
+		
 		GameEvent ge = events.peek();
 		int i =0;
 		while(ge.triggerable && rules.trigger(ge) && i<TRIGGER_DEPTH)

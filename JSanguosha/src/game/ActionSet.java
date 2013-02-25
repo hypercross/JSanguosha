@@ -15,6 +15,7 @@ public class ActionSet {
 	public ActionSet(Type... type)
 	{
 		this.types = new Array<Type>(type);
+		this.types.add(Type.EVENT_DECISION_IDLE);
 		this.filter = defaultFilter();
 	}
 

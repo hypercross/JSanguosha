@@ -65,4 +65,22 @@ public class EntityViewManager {
 		
 		actor_to_entity.clear();
 	}
+
+	public void toggleSelected(int[] ids) {
+		for(IEntityView view : actor_to_entity.keySet())
+		{
+			Selectable select = view.selectable();
+			if(select == null)continue;
+			
+			if(contains(ids,view.entity().id()))
+				select.isSelected = true;
+			else select.isSelected = false;
+		}
+	}
+	
+	private boolean contains(int[] ids, int i)
+	{
+		for(int id :ids)if(id == i)return true;
+		return false;
+	}
 }

@@ -31,6 +31,8 @@ import application.network.handlers.EntityDeployHandler;
 import application.network.handlers.EntityRemoveHandler;
 import application.network.handlers.EntityUpdateHandler;
 import application.network.handlers.INetworkHandler;
+import application.network.handlers.SelectionRequestHandler;
+import application.network.handlers.SelectionUpdateHandler;
 
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.esotericsoftware.kryo.Kryo;
@@ -66,6 +68,22 @@ public class NetworkManager {
 			instance.register(new EntityDeployHandler(stage));
 			instance.register(new EntityRemoveHandler());
 			instance.register(new EntityUpdateHandler());
+			instance.register(new SelectionRequestHandler());
+			instance.register(new SelectionUpdateHandler());
+	}
+	
+	public static void initialize(Kryo kryo)
+	{
+		kryo.register(CardEntityUpdate.class);
+		kryo.register(CardSlotEntityUpdate.class);
+		kryo.register(EntityDeployRequest.class);
+		kryo.register(EntityRemoveUpdate.class);
+		kryo.register(EntityUpdate.class);
+		kryo.register(PlayerEntityUpdate.class);
+		kryo.register(SelectionRequest.class);
+		kryo.register(SelectionUpdate.class);
+		kryo.register(String[].class);
+		kryo.register(int[].class);
 	}
 	
 	public NetworkManager()
@@ -79,16 +97,16 @@ public class NetworkManager {
 		players = pm;
 	}
 	
+	public PlayerManager playerManager()
+	{
+		return players;
+	}
+	
 	public void startServer() throws IOException
 	{
 		server = new Server();
 		Kryo kryo = server.getKryo();
-		kryo.register(CardEntityUpdate.class);
-		kryo.register(CardSlotEntityUpdate.class);
-		kryo.register(EntityDeployRequest.class);
-		kryo.register(EntityRemoveUpdate.class);
-		kryo.register(EntityUpdate.class);
-		kryo.register(PlayerEntityUpdate.class);
+		initialize(kryo);
 		
 		server.start();
 		server.bind(54323);
@@ -101,13 +119,7 @@ public class NetworkManager {
 	{
 		client = new Client();
 		Kryo kryo = client.getKryo();
-
-		kryo.register(CardEntityUpdate.class);
-		kryo.register(CardSlotEntityUpdate.class);
-		kryo.register(EntityDeployRequest.class);
-		kryo.register(EntityRemoveUpdate.class);
-		kryo.register(EntityUpdate.class);
-		kryo.register(PlayerEntityUpdate.class);
+		initialize(kryo);
 		
 		client.start();
 		client.connect(5000, host, 54323);
@@ -119,7 +131,7 @@ public class NetworkManager {
 	public void startHost() throws IOException
 	{
 		startServer();
-		startClient("127.0.0.1");
+		startClient("localhost");
 		this.side = Side.Host;
 	}
 	
@@ -182,7 +194,12 @@ public class NetworkManager {
 		}
 	}
 	
-	public void sendDecisionRequest(int id, SelectionUpdate su)
+	public void sendSelectionRequest(SelectionRequest sr)
+	{
+		client.sendTCP(sr);
+	}
+	
+	public void sendSelectionUpdate(int id, SelectionUpdate su)
 	{
 		playerID_to_connection.get(id).sendTCP(su);
 	}
@@ -222,6 +239,7 @@ public class NetworkManager {
 		@Override
 		public void received(Connection connection, Object object)
 		{
+			Log.fine("received " + object);
 				for(INetworkHandler handler : handlers)
 				{
 					if(handler.side() == Side.Server)
@@ -248,6 +266,7 @@ public class NetworkManager {
 		@Override
 		public void received(Connection connection, Object object)
 		{
+			Log.fine("received " + object);
 				for(INetworkHandler handler : handlers)
 				{
 					if(handler.side() == Side.Client)

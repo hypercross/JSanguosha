@@ -1,6 +1,6 @@
 package game;
 
-import com.badlogic.gdx.utils.Array;
+import java.util.ArrayList;
 
 import game.entity.CardEntity;
 import game.entity.Entity;
@@ -40,9 +40,9 @@ public class Action {
 		return get(i,Entity.class);
 	}
 	
-	public Entity[] list(Class<? extends Entity> entityType)
+	public Object[] list(Class<? extends Entity> entityType)
 	{
-		Array<Entity> entityList = new Array<Entity>();
+		ArrayList<Entity> entityList = new ArrayList<Entity>();
 		
 		for(Entity e : entities)
 		{
@@ -50,7 +50,7 @@ public class Action {
 				entityList.add(e);
 		}
 		
-		return entityList.toArray();
+		return  entityList.toArray();
 	}
 	
 	private Entity get(int i, Class<? extends Entity> returnType)

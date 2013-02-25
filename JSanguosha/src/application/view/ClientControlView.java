@@ -18,6 +18,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 
 public class ClientControlView extends Group implements IEntityView{
+	
+	public static ClientControlView instance;
 
 	PlayerEntityView pev;
 	ArrayList<CardEntityView> hand = new ArrayList<CardEntityView>();
@@ -32,7 +34,9 @@ public class ClientControlView extends Group implements IEntityView{
 
 		this.addActor(controls = new Table());
 
-		updateProperty();		
+		updateProperty();
+		
+		instance = this;
 	}
 
 	public void layout()
@@ -140,5 +144,15 @@ public class ClientControlView extends Group implements IEntityView{
 		deployButtons("Confirm", "Cancel");
 		layout();
 
+	}
+
+	@Override
+	public Entity entity() {
+		return pev.player;
+	}
+
+	@Override
+	public Selectable selectable() {
+		return null;
 	}
 }

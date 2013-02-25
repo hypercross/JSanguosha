@@ -1,5 +1,8 @@
 package application.view;
 
+import application.network.NetworkManager;
+import application.network.SelectionRequest;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -21,14 +24,17 @@ public class Selectable{
 	private static int DURATION = 300;
 	private static float OPACITY = 0.12f;
 	
-	public Selectable(Actor actor)
+	public Selectable(final Actor actor)
 	{
+		if(actor instanceof IEntityView)
 		actor.addListener(clickListener = new ClickListener()
 		{
 			public void clicked (InputEvent event, float x, float y) {
 				if(event.isHandled())return;
 				if(!isEnabled)return;
-					isSelected = !isSelected;
+				NetworkManager.instance.report(
+						new SelectionRequest(((IEntityView)actor).entity(), 
+								ClientControlView.instance.pev.player.playerID));
 			}
 		});
 		glow = DefaultSkin.instance.getRegion("glow");

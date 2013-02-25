@@ -1,6 +1,7 @@
 package application.view;
 
 import game.entity.CardEntity;
+import game.entity.Entity;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -89,5 +90,15 @@ public class CardEntityView extends Actor implements IEntityView{
 		else if(card.suit == 'H')suitName = "card/heart";
 		
 		suit = DefaultSkin.instance.getRegion(suitName);
+	}
+
+	@Override
+	public Entity entity() {
+		return card;
+	}
+
+	@Override
+	public Selectable selectable() {
+		return select;
 	}
 }

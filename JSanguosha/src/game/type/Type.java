@@ -67,4 +67,9 @@ public class Type {
 	{
 		return new StringType(blah);
 	}
+	
+	public static Type fromParent(String name, Type parent)
+	{
+		return new LinkedType(name,parent);
+	}
 }
