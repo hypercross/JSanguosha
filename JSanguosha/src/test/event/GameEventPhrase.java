@@ -30,7 +30,7 @@ public class GameEventPhrase extends StagedGameEvent{
 			break;
 		case 2:
 			//draw cards
-			sub.attach(GameEventCardMove.draw(pe));
+			sub.attach(GameEventCardMove.draw(pe, 2));
 			return true;
 		case 3:
 			//play

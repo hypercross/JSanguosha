@@ -109,6 +109,6 @@ public void resume() {
 
 public static String version()
 {
-	return "Indev 20130224";
+	return "Indev Prime 20130224";
 }
 }

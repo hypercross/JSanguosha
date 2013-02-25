@@ -32,6 +32,13 @@ public class GameEventCardMove extends GameEvent{
 				(CardSlotEntity) pe.child("hand"));
 	}
 	
+	public static GameEventCardMoveMulti draw(PlayerEntity pe, int i)
+	{
+		CardEntity[] ces = new CardEntity[i];
+		for(int j = 0;j<i;j++)ces[j] = (CardEntity) pe.root().child("drawDeck").get(j);
+		return new GameEventCardMoveMulti(pe.root(), (CardSlotEntity) pe.child("hand"), ces);
+	}
+	
 	public static GameEventCardMove discard(CardEntity ce)
 	{
 		if(ce.container == null)return null;

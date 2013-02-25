@@ -21,6 +21,8 @@ package application.network;
 
 import game.PlayerManager;
 import game.entity.Entity;
+import hx.Log;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -212,7 +214,7 @@ public class NetworkManager {
 			NetworkPlayer np = new NetworkPlayer();
 			players.login(np);
 			register(np.playerID(), connection);
-			System.out.println("player" + np.playerID() + " logged in");
+			Log.fine("player" + np.playerID() + " logged in");
 			
 			players.game.environment.deployLayout(players.game, np);
 	    }
@@ -237,7 +239,7 @@ public class NetworkManager {
 	    {
 			int id = connection_to_playerID.get(connection);
 			unregister(id);
-			System.out.println("player" + id + " logged out");
+			Log.fine(("player" + id + " logged out"));
 	    }
 	}
 	

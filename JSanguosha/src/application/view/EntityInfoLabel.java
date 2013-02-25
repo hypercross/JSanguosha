@@ -46,8 +46,9 @@ public class EntityInfoLabel extends Label{
 	private String list(Entity entity, String name)
 	{
 		String display = name + ": ==========================\n";
-		for(int i = 0;i < entity.child(name).size(); i ++)
+		for(int i = 0;i < Math.min(entity.child(name).size(), 10); i ++)
 			display += entity.child(name).get(i).toString() + "\n";
+		if(entity.child(name).size() > 10)display += "...\n";
 		
 		return display;
 	}

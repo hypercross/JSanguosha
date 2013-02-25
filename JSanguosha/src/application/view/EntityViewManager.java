@@ -55,7 +55,7 @@ public class EntityViewManager {
 		
 		for(IEntityView aiev : iev)aiev.updateProperty();
 		
-		Log.fine(entity.root().toString());
+		Log.trivial(entity.root().toString());
 	}
 	
 	public synchronized void removeAll()

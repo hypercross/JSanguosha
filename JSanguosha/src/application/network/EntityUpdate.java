@@ -24,10 +24,12 @@ public abstract class EntityUpdate {
 			Entity.ingame.get(parentId).setChild(name, entity);
 		}
 		
-		if(Entity.ingame.containsKey(containerId) )
+		if(Entity.ingame.containsKey(containerId))
 		{
-			Entity.ingame.get(containerId).add(entity);
 			CardEntity ce = (CardEntity) entity;
+			if(ce.container != null && ce.container.id() ==containerId)return;
+			
+			Entity.ingame.get(containerId).add(entity);			
 			if(ce.container != null)ce.container.remove(ce);
 			ce.container = (CardSlotEntity) Entity.ingame.get(containerId); 
 		}

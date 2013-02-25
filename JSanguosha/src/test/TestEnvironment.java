@@ -15,13 +15,10 @@ public class TestEnvironment extends Environment{
 	
 	public TestEnvironment()
 	{
-		cards = new ICard[5];
+		cards = new ICard[2];
 		
 		cards[0] = new CardSlash();
-		cards[1] = new CardSlash();
-		cards[2] = new CardSlash();
-		cards[3] = new CardDodge();
-		cards[4] = new CardDodge();
+		cards[1] = new CardDodge();
 	}
 	
 	public void setupGame(GameEntity gameEntity) {
@@ -41,9 +38,22 @@ public class TestEnvironment extends Environment{
 	{
 		if(slot.name().equals("drawDeck"))
 		{
-			for(int i =0;i<5;i++)
+			for(int i =0;i<104;i++)
 			{
-				CardEntity ce = new CardEntity(i, i, 'S', cards[i]);
+				char suit = 'D';
+				switch(i % 4)
+				{
+				case 0:
+					suit = 'S';
+					break;
+				case 1:
+					suit = 'C';
+					break;
+				case 2:
+					suit = 'H';
+					break;
+				}
+				CardEntity ce = new CardEntity(i, i % 13, suit, cards[i%2]);
 				slot.add(ce);
 				ce.container = slot;
 			}
