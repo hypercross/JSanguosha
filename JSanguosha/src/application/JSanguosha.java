@@ -14,10 +14,8 @@ import test.TestPlayerManager;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL10;
-import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
-import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 public class JSanguosha implements ApplicationListener {
     public Stage stage;
@@ -56,15 +54,27 @@ public class JSanguosha implements ApplicationListener {
          table.add(game);
          table.row();
          
-         game.addListener(new ClickListener()
+
+         new Thread()
          {
-        	 public void clicked (InputEvent event, float x, float y) {
-        		 ge.step();
-        		 for(EntityInfoLabel label : labels)
-        			 label.update();
-        	}
-         });
+        	 public void run()
+        	 {
+        		 while(true)
+        		 {
+        			 ge.step();
+        			 for(EntityInfoLabel label : labels)
+        				 label.update();
+
+        			 try {
+						Thread.sleep(1000);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+        		 }
+        	 }
+         }.start();
          
+
 //         for(IPlayer ip : ge.players.players)
 //         {
 //        	 PlayerEntity player = (PlayerEntity) ge.child("player" + ip.playerID());

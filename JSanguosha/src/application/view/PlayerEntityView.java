@@ -40,7 +40,8 @@ public class PlayerEntityView extends Group implements IEntityView{
 				return new Object[]{ DefaultSkin.instance.getRegion("player/magatama"),
 						"x" + entity.hp};
 			}
-		};
+		};		
+		props[0].sel.isEnabled = false;
 
 		props[1] = new CollapsedPropertyView<CardSlotEntity>((CardSlotEntity) pe.child("hand"))
 		{

@@ -35,8 +35,6 @@ public class PlayerManager {
 	
 	public Action askForDecision(PlayerEntity thePlayer, ActionSet actions)
 	{
-		thePlayer.root().waiting = true;
-		
 		IPlayer player = null;
 		for(IPlayer a : players)
 			if(a.playerID() == thePlayer.playerID)player = a;

@@ -1,6 +1,5 @@
 package test.event;
 
-import test.CardDodge;
 import test.event.decision.AskForDiscard;
 import game.ActionFilter;
 import game.ActionSet;
@@ -11,6 +10,7 @@ import game.type.LinkedType;
 import game.type.Type;
 import gameEvent.GameEvent;
 import gameEvent.StagedGameEvent;
+import hx.Log;
 
 public class GameEventPhrase extends StagedGameEvent{
 	public static Type EVENT_PHRASE = new LinkedType("Phrase",Type.EVENT_PHRASE);
@@ -46,9 +46,9 @@ public class GameEventPhrase extends StagedGameEvent{
 		case 4:
 			ActionSet as = new ActionSet();
 			as.types.add(Type.ACTION_CAST);
-			as.filter()	.and(new ActionFilter.ActionType(Type.ACTION_CAST))
+			as.setFilter(new ActionFilter.ActionType(Type.ACTION_CAST)
 						.and(new ActionFilter.Count(CardEntity.class))
-						.and(new ActionFilter.Count(PlayerEntity.class,0));
+						.and(new ActionFilter.Count(PlayerEntity.class,0)));
 			
 			sub.attach(new AskForDiscard(pe, as));
 			return true;

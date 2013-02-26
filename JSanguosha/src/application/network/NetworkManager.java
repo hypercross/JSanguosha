@@ -239,7 +239,7 @@ public class NetworkManager {
 		@Override
 		public void received(Connection connection, Object object)
 		{
-			Log.fine("received " + object);
+			Log.trivial("received " + object);
 				for(INetworkHandler handler : handlers)
 				{
 					if(handler.side() == Side.Server)
@@ -266,7 +266,7 @@ public class NetworkManager {
 		@Override
 		public void received(Connection connection, Object object)
 		{
-			Log.fine("received " + object);
+			Log.trivial("received " + object);
 				for(INetworkHandler handler : handlers)
 				{
 					if(handler.side() == Side.Client)

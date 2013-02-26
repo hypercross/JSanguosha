@@ -6,6 +6,7 @@ import game.entity.CardEntity;
 import game.entity.Entity;
 import game.entity.PlayerEntity;
 import game.type.Type;
+import hx.Log;
 
 public class Action {
 	
@@ -65,5 +66,10 @@ public class Action {
 		}
 		
 		return null;
+	}
+	
+	public String toString()
+	{
+		return performer.name() +" "+ type + Log.list(entities); 
 	}
 }

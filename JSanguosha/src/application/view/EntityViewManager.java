@@ -73,7 +73,7 @@ public class EntityViewManager {
 			if(select == null)continue;
 			
 			if(contains(ids,view.entity().id()))
-				select.isSelected = true;
+				select.isSelected = select.isEnabled;
 			else select.isSelected = false;
 		}
 	}

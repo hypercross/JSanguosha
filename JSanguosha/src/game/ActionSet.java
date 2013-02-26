@@ -6,6 +6,7 @@ import game.entity.CardEntity;
 import game.entity.CardSlotEntity;
 import game.entity.PlayerEntity;
 import game.type.Type;
+import hx.Log;
 
 public class ActionSet {
 	
@@ -21,12 +22,20 @@ public class ActionSet {
 
 	public boolean contains(Action action)
 	{
-		return filter.checkAll(action);
+		boolean result = filter.checkAll(action) || action.typeDesc().is(Type.EVENT_DECISION_IDLE);
+		Log.fine("ActionSet checked " + action + " ..." + (result ? "true" : "false"));
+		Log.r();
+		return result;
 	}
 	
 	public ActionFilter filter()
 	{
 		return filter;
+	}
+	
+	public ActionFilter setFilter(ActionFilter f)
+	{
+		return filter = f;
 	}
 	
 	public static ActionFilter defaultFilter()

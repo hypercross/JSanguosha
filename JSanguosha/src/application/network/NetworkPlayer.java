@@ -9,6 +9,7 @@ import game.entity.Entity;
 import game.entity.GameEntity;
 import game.entity.PlayerEntity;
 import game.type.Type;
+import hx.Log;
 
 public class NetworkPlayer implements IPlayer{
 
@@ -87,28 +88,19 @@ public class NetworkPlayer implements IPlayer{
 
 	public void acceptToggleSelection(int i)
 	{
+		Log.fine("toggling " + i);
 		SelectionUpdate su ;
 		if(selection.contains(i))
 		{
 			int index = selection.indexOf(i);
 			selection.remove(index);
 			su = getSelectionUpdate();
-			if(su.types().length == 0)
-			{
-				selection.add(index, i);
-				return;
-			}
 			NetworkManager.instance.sendSelectionUpdate(playerID,su);
 		}
 		else 
 		{
 			selection.add(i);
 			su = getSelectionUpdate();
-			if(su.types().length == 0)
-			{
-				selection.remove(selection.indexOf(i));
-				return;
-			}
 			NetworkManager.instance.sendSelectionUpdate(playerID,su);
 		}
 	}

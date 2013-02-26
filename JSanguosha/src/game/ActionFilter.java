@@ -2,6 +2,7 @@ package game;
 
 import game.entity.Entity;
 import game.type.Type;
+import hx.Log;
 
 public class ActionFilter {
 	private ActionFilter a,b;
@@ -49,7 +50,9 @@ public class ActionFilter {
 		case 2:
 			return (resultA ? resultB : true);
 		default:
-			return check(action);
+			boolean result = check(action);
+			Log.fine("ActionSet Filter checked " + this.getClass().getSimpleName() + "..." + (result ? "true" : "false"));
+			return result;
 		}
 	}
 	
@@ -111,7 +114,7 @@ public class ActionFilter {
 		
 		public Count(Class<? extends Entity> className, int max)
 		{
-			this(className,max,1);
+			this(className,max,Math.min(1,max));
 		}
 		
 		public Count(Class<? extends Entity> className)
