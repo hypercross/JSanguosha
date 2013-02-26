@@ -1,4 +1,4 @@
-package test;
+package test.rule;
 
 import game.entity.CardEntity;
 import game.entity.Entity;

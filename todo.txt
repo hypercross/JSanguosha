@@ -5,9 +5,10 @@ x: compromized
 /: fully implemented
 
 - use type meta for a type of card's texture path & description (not requesting/caching resource from server yet)
-*deploy/submit game decision requests
+- deploy/submit game decision requests
+*ttf rendering and unicode game log display
 *implement more game events & cards
 ^type meta transfering 
 ^dynamic environment loading with Reflection
 ^a launcher that accepts jsanguosha:// protocol
-^sql server list query 
+^DHT gamelist web

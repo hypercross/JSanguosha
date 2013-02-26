@@ -16,13 +16,13 @@ public class ActionSet {
 	public ActionSet(Type... type)
 	{
 		this.types = new Array<Type>(type);
-		this.types.add(Type.EVENT_DECISION_IDLE);
+		this.types.add(Type.ACTION_IDLE);
 		this.filter = defaultFilter();
 	}
 
 	public boolean contains(Action action)
 	{
-		boolean result = filter.checkAll(action) || action.typeDesc().is(Type.EVENT_DECISION_IDLE);
+		boolean result = filter.checkAll(action) || action.typeDesc().is(Type.ACTION_IDLE);
 		Log.fine("ActionSet checked " + action + " ..." + (result ? "true" : "false"));
 		Log.r();
 		return result;

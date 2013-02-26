@@ -9,8 +9,9 @@ import game.type.LinkedType;
 import game.type.Type;
 import gameEvent.GameEvent;
 
+@Deprecated
 public class GameEventCardMove extends GameEvent{
-	public static Type EVENT_MOVE = new LinkedType("CardMove", Type.EVENT_ENTITY);
+	public static Type EVENT_MOVE = new LinkedType("CardMove", Type.EVENT);
 	
 	public CardEntity subject;
 	public CardSlotEntity target;

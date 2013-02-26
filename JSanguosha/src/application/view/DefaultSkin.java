@@ -1,7 +1,7 @@
 package application.view;
 
-import test.CardDodge;
-import test.CardSlash;
+import test.card.CardDodge;
+import test.card.CardSlash;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;

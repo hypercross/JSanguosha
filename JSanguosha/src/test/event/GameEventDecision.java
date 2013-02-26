@@ -7,9 +7,10 @@ import game.type.LinkedType;
 import game.type.Type;
 import gameEvent.GameEvent;
 
+@Deprecated
 public class GameEventDecision extends GameEvent
 {
-	public static Type EVENT_QUERY = new LinkedType("Query", Type.EVENT_DECISION); 
+	public static Type EVENT_QUERY = new LinkedType("Query", Type.EVENT); 
 	
 	public ActionSet actions;
 	public Action response;

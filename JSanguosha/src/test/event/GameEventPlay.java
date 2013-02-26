@@ -7,9 +7,10 @@ import game.type.Type;
 import gameEvent.GameEvent;
 import gameEvent.StagedGameEvent;
 
+@Deprecated
 public class GameEventPlay extends StagedGameEvent
 {
-	public static Type EVENT_PLAY = new LinkedType("Play",Type.EVENT_ENTITY);
+	public static Type EVENT_PLAY = new LinkedType("Play",Type.EVENT);
 	
 	public Action playAction;	
 	public GameEventPlay(GameEntity theGame, Action action) {

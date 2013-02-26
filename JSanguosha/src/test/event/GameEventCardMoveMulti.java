@@ -6,6 +6,7 @@ import game.entity.CardSlotEntity;
 import game.entity.GameEntity;
 import gameEvent.GameEvent;
 
+@Deprecated
 public class GameEventCardMoveMulti extends GameEvent
 {
 

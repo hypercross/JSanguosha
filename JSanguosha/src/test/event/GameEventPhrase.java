@@ -11,8 +11,9 @@ import game.type.Type;
 import gameEvent.GameEvent;
 import gameEvent.StagedGameEvent;
 
+@Deprecated
 public class GameEventPhrase extends StagedGameEvent{
-	public static Type EVENT_PHRASE = new LinkedType("Phrase",Type.EVENT_PHRASE);
+	public static Type EVENT_PHRASE = new LinkedType("Phrase",Type.EVENT);
 	public PlayerEntity pe;
 
 	public GameEventPhrase(GameEntity theGame, PlayerEntity pe) {

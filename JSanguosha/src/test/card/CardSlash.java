@@ -1,4 +1,4 @@
-package test;
+package test.card;
 
 import game.ActionFilter;
 import game.ActionSet;
@@ -12,10 +12,11 @@ import gameEvent.GameEvent;
 import gameEvent.StagedGameEvent;
 import test.event.GameEventDecision;
 import test.event.GameEventPlay;
+import test.rule.RuleOnPlay;
 
 public class CardSlash implements ICard{
-	public static Type typeCardSlash = new LinkedType("Slash",Type.CARD);
-	public static Type typeEventSlash = new LinkedType("Slash",Type.EVENT_ENTITY);
+	public static Type typeCardSlash = new LinkedType("Slash",Type.ENTITY_CARD);
+	public static Type typeEventSlash = new LinkedType("Slash",Type.EVENT);
 
 	@Override
 	public Type cardType() {
@@ -66,7 +67,7 @@ public class CardSlash implements ICard{
 				subEvent.attachToTop(ged = new GameEventDecision( set , to));
 				break;
 			case 1:
-				if(ged.getResponse().typeDesc().is(Type.EVENT_DECISION_IDLE))
+				if(ged.getResponse().typeDesc().is(Type.ACTION_IDLE))
 					;//attach damage event
 				break;
 			}

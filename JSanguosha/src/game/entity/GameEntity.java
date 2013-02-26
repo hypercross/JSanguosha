@@ -88,4 +88,9 @@ public class GameEntity extends Entity{
 		}
 		else events.pop();
 	}
+	
+	public void newEvent(GameEvent ge)
+	{
+		events.peek().attach(ge);
+	}
 }

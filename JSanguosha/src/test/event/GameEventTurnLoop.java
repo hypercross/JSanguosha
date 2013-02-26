@@ -7,8 +7,9 @@ import game.type.LinkedType;
 import game.type.Type;
 import gameEvent.GameEvent;
 
+@Deprecated
 public class GameEventTurnLoop extends GameEvent{
-	public static Type EVENT_TURN = new LinkedType("Turn",Type.EVENT_PHRASE);
+	public static Type EVENT_TURN = new LinkedType("Turn",Type.EVENT);
 
 	public GameEventTurnLoop(GameEntity theGame) {
 		super(EVENT_TURN, theGame, 0);

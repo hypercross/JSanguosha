@@ -7,19 +7,7 @@ public class Type {
 
 	public static Type BASE_TYPE = new Type();
 	
-	public static Type CARD = new LinkedType("Card",BASE_TYPE);
-	
-	public static Type CARD_GENERAL = new LinkedType("General",CARD);
-	public static Type CARD_ROLE = new LinkedType("Role",CARD);
-	public static Type CARD_GAME = new LinkedType("Game",CARD);
-	
 	public static Type EVENT = new LinkedType("Event",BASE_TYPE);
-	
-	public static Type EVENT_PHRASE = new LinkedType("Phrase",EVENT);
-	public static Type EVENT_ENTITY = new LinkedType("Entity",EVENT);
-	
-	public static Type EVENT_DECISION = new LinkedType("Decision",EVENT);
-	public static Type EVENT_DECISION_IDLE = new LinkedType("Idle",EVENT_DECISION);
 	
 	public static Type ENTITY = new LinkedType("Entity",BASE_TYPE);
 	
@@ -32,6 +20,9 @@ public class Type {
 	
 	public static Type ACTION_PLAY = new LinkedType("Play", ACTION);
 	public static Type ACTION_CAST = new LinkedType("Cast", ACTION);
+	public static Type ACTION_DISCARD = new LinkedType("Discard", ACTION);
+	public static Type ACTION_SKILL = new LinkedType("Skill", ACTION);
+	public static Type ACTION_IDLE = new LinkedType("Idle", ACTION);
 	
 	public String toString()
 	{

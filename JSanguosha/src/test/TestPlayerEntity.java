@@ -1,5 +1,7 @@
 package test;
 
+import test.card.CardDodge;
+import test.card.CardSlash;
 import game.entity.CardEntity;
 import game.entity.PlayerEntity;
 

@@ -9,6 +9,8 @@ import game.entity.CardSlotEntity;
 import game.entity.Entity;
 import game.entity.GameEntity;
 import game.entity.PlayerEntity;
+import test.card.CardDodge;
+import test.card.CardSlash;
 import test.event.GameEventTurnLoop;
 
 public class TestEnvironment extends Environment{

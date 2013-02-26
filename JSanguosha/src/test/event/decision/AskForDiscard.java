@@ -1,5 +1,6 @@
 package test.event.decision;
 
+import test.TestPackage;
 import test.event.GameEventCardMove;
 import game.Action;
 import game.ActionSet;
@@ -8,8 +9,9 @@ import game.type.Type;
 import gameEvent.GameEvent;
 import gameEvent.StagedGameEvent;
 
+@Deprecated
 public class AskForDiscard extends StagedGameEvent{
-	static Type EVENT_DECISION_AKD = Type.fromParent("Discard", Type.EVENT_DECISION);
+	static Type EVENT_DECISION_AKD = Type.fromParent("Discard", Type.ACTION_DISCARD);
 
 	PlayerEntity player;
 	Action decision;
@@ -29,7 +31,7 @@ public class AskForDiscard extends StagedGameEvent{
 			decision = this.theGame.players.askForDecision(player, as);
 			break;
 		case 1:
-			sub.attachToTop(GameEventCardMove.discard(decision.card(0)));
+			theGame.newEvent(TestPackage.discard(decision.card(0)));
 			return true;
 		}
 		return false;
