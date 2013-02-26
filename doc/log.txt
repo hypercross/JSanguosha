@@ -1,0 +1,30 @@
+Log：
+
+用于输出调试/错误信息，以及记录游戏内部事件。
+
+有四种输出等级：
+Severe（重大错误）
+alert（警告）
+fine（常规事件）
+trivil（常规细节）
+
+每种等级有各自的输出方法，如
+Log.fine("blah"); //以fine级别输出一条内容为blah的log
+
+每种等级可以分别开启/关闭，关闭后即使调用也看不到log输出，如
+Log.suppress(Level.Trivil);
+Log.trivial("blah");//看不到输出
+
+可以在每个类里单独开启一个级别专用于该类的Log，如：
+public class foo
+{
+	static {Log.temporary()} 
+	//开启该类的临时输出，注释掉本行可关闭所有log输出
+	
+	public foo()
+	{
+		Log.t("blah");
+		//输出blah到Log
+	}
+}
+此用法应该只用于调试。
