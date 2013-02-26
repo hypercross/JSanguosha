@@ -1,0 +1,6 @@
+eclipse编译方法
+
+1.打开eclipse，创建一个新workspace
+2.File -> Import -> General -> Existing Projects into Workspace
+3.选择你的repo目录 勾选JSanguosha和JSanguosha-desktop两个project,确定
+4.打开JSanguoshaDesktop.java文件，并点击编译运行按钮
