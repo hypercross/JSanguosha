@@ -1,11 +1,11 @@
-ÖĞÎÄ
-eclipse±àÒë·½·¨
+ä¸­æ–‡
+eclipseç¼–è¯‘æ–¹æ³•
 
-1.¾»ÉíÕ«½äÆßÈÕ£¬Ãæ³¯ÄÏ·½ÉÕÒ»ìÄÏã£¬ĞÄÖĞÄ¬Äî¡°³æÃÃ°³µÄ¼Ş¡±
-2.´ò¿ªeclipse£¬´´½¨Ò»¸öĞÂworkspace
+1.å‡€èº«æ–‹æˆ’ä¸ƒæ—¥ï¼Œé¢æœå—æ–¹çƒ§ä¸€ç‚·é¦™ï¼Œå¿ƒä¸­é»˜å¿µâ€œè™«å¦¹ä¿ºçš„å«â€
+2.æ‰“å¼€eclipseï¼Œåˆ›å»ºä¸€ä¸ªæ–°workspace
 3.File -> Import -> General -> Existing Projects into Workspace
-4.Ñ¡ÔñÄãµÄrepoÄ¿Â¼ ¹´Ñ¡JSanguoshaºÍJSanguosha-desktopÁ½¸öproject,È·¶¨
-5.´ò¿ªJSanguoshaDesktop.javaÎÄ¼ş£¬²¢µã»÷±àÒëÔËĞĞ°´Å¥
+4.é€‰æ‹©ä½ çš„repoç›®å½• å‹¾é€‰JSanguoshaå’ŒJSanguosha-desktopä¸¤ä¸ªproject,ç¡®å®š
+5.æ‰“å¼€JSanguoshaDesktop.javaæ–‡ä»¶ï¼Œå¹¶ç‚¹å‡»ç¼–è¯‘è¿è¡ŒæŒ‰é’®
 
 
 English
@@ -17,3 +17,8 @@ Compilation guide for eclipse:
 4. check the two projects JSanguosha and JSanguosha-desktop
 5. open JSanguoshaDesktop.java, and click "run".
 6. blame me for this crappy guide.
+
+æ—¥æœ¬èª
+Eclipseã§ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«ã™ã‚‹æ–¹æ³•
+
+1. è‹±èªã‚’å‹‰å¼·ã—ã¦ãã ã•ã„
