@@ -22,11 +22,13 @@ package application.network;
 import game.PlayerManager;
 import game.entity.Entity;
 import hx.Log;
+import hx.TempLog;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import application.network.handlers.ConfirmationRequestHandler;
 import application.network.handlers.EntityDeployHandler;
 import application.network.handlers.EntityRemoveHandler;
 import application.network.handlers.EntityUpdateHandler;
@@ -42,6 +44,7 @@ import com.esotericsoftware.kryonet.Listener;
 import com.esotericsoftware.kryonet.Server;
 
 public class NetworkManager {
+	
 	public enum Side
 	{
 		Server,
@@ -70,6 +73,7 @@ public class NetworkManager {
 			instance.register(new EntityUpdateHandler());
 			instance.register(new SelectionRequestHandler());
 			instance.register(new SelectionUpdateHandler());
+			instance.register(new ConfirmationRequestHandler());
 	}
 	
 	public static void initialize(Kryo kryo)
@@ -82,6 +86,7 @@ public class NetworkManager {
 		kryo.register(PlayerEntityUpdate.class);
 		kryo.register(SelectionRequest.class);
 		kryo.register(SelectionUpdate.class);
+		kryo.register(ConfirmationRequest.class);
 		kryo.register(String[].class);
 		kryo.register(int[].class);
 	}
@@ -223,6 +228,7 @@ public class NetworkManager {
 		handlers.add(handler);
 	}
 	
+	@TempLog
 	class ServerLoginListener extends Listener
 	{
 		@Override
@@ -239,7 +245,7 @@ public class NetworkManager {
 		@Override
 		public void received(Connection connection, Object object)
 		{
-			Log.trivial("received " + object);
+			Log.t("received " + object);
 				for(INetworkHandler handler : handlers)
 				{
 					if(handler.side() == Side.Server)
@@ -261,12 +267,13 @@ public class NetworkManager {
 	    }
 	}
 	
+	@TempLog
 	class ClientLoginListener extends Listener
 	{
 		@Override
 		public void received(Connection connection, Object object)
 		{
-			Log.trivial("received " + object);
+			Log.t("received " + object);
 				for(INetworkHandler handler : handlers)
 				{
 					if(handler.side() == Side.Client)

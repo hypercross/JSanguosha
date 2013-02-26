@@ -33,8 +33,15 @@ public class Log {
 	public static void t(String n)
 	{
 		StackTraceElement[] stack = Thread.currentThread().getStackTrace();
-		if(tempTrace.contains(stack[2].getClassName()))
-			o("JSanguoshaLog[ temp ]: "+n);
+		
+		boolean annotated = false;
+		try {
+			annotated = Class.forName(stack[2].getClassName()).isAnnotationPresent(TempLog.class);
+		} catch (ClassNotFoundException e) {
+		}
+		
+		if(annotated || tempTrace.contains(stack[2].getClassName()))
+			o("JSanguoshaLog[" + stack[2].getClassName() +"]"+ n);
 	}
 	
 	public static void suppress(Level level)

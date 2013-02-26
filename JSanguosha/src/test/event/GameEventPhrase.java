@@ -10,7 +10,6 @@ import game.type.LinkedType;
 import game.type.Type;
 import gameEvent.GameEvent;
 import gameEvent.StagedGameEvent;
-import hx.Log;
 
 public class GameEventPhrase extends StagedGameEvent{
 	public static Type EVENT_PHRASE = new LinkedType("Phrase",Type.EVENT_PHRASE);

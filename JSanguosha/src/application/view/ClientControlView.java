@@ -9,13 +9,18 @@ import game.entity.PlayerEntity;
 import game.type.Type;
 import hx.Log;
 
+import application.network.ConfirmationRequest;
+import application.network.NetworkManager;
+
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
+import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.actions.MoveToAction;
 import com.badlogic.gdx.scenes.scene2d.ui.Button;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
+import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 
 public class ClientControlView extends Group implements IEntityView{
 	
@@ -41,7 +46,7 @@ public class ClientControlView extends Group implements IEntityView{
 
 	public void layout()
 	{
-		controls.setPosition(100,controls.getCells().size() * 20f);
+		controls.setPosition(100, 5 * 20f);
 		pev.setPosition(getStage().getWidth() - pev.getWidth(), 0);
 
 		float start = 300;
@@ -75,7 +80,7 @@ public class ClientControlView extends Group implements IEntityView{
 		controls.clear();
 		for(Type atype : types)
 		{
-			controls.add(new Button(new Label(atype.toString(),DefaultSkin.instance), DefaultSkin.instance));
+			controls.add(buttonOfType(atype));
 			controls.row();
 		}
 	}
@@ -85,8 +90,32 @@ public class ClientControlView extends Group implements IEntityView{
 		controls.clear();
 		for(String atype : types)
 		{
-			controls.add(new Button(new Label(atype,DefaultSkin.instance), DefaultSkin.instance));
+			controls.add(buttonOfType(Type.fromString(atype)));
 			controls.row();
+		}
+	}
+	
+	public Button buttonOfType(Type atype)
+	{
+		Button btn = new Button(new Label(atype.toString(),DefaultSkin.instance), DefaultSkin.instance);
+		btn.addListener(new ConfirmationRequestListener(atype, pev.player.playerID));
+
+		return btn;
+	}
+
+	class ConfirmationRequestListener extends ClickListener
+	{
+		Type type;
+		int id;
+		public ConfirmationRequestListener(Type type, int id)
+		{
+			this.id = id;
+			this.type = type;
+		}
+		
+		public void clicked (InputEvent event, float x, float y) {
+			Log.fine("pressed");
+			NetworkManager.instance.report(new ConfirmationRequest(id, type));
 		}
 	}
 
@@ -141,7 +170,6 @@ public class ClientControlView extends Group implements IEntityView{
 		for(CardEntityView cev : toRemove)
 			hand.remove(cev);
 
-		deployButtons("Confirm", "Cancel");
 		layout();
 
 	}

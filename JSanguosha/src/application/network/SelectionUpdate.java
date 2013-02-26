@@ -50,4 +50,13 @@ public class SelectionUpdate {
 		
 		return types;
 	}
+	
+	public static SelectionUpdate getIdle()
+	{
+		SelectionUpdate su = new SelectionUpdate();
+		su.select();
+		su.repliable();
+		
+		return su;
+	}
 }

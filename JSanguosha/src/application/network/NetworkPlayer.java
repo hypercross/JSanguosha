@@ -88,6 +88,8 @@ public class NetworkPlayer implements IPlayer{
 
 	public void acceptToggleSelection(int i)
 	{
+		if(available)return;
+		
 		Log.fine("toggling " + i);
 		SelectionUpdate su ;
 		if(selection.contains(i))
@@ -113,5 +115,17 @@ public class NetworkPlayer implements IPlayer{
 	@Override
 	public GameEntity getGame() {
 		return game;
+	}
+
+	public boolean acceptAction(String actionType) {
+		if(available)return false;
+		
+		if(as.contains(getDecision(game,Type.fromString(actionType))))
+		{
+			this.actionType = actionType;
+			this.available = true;
+			return true;
+		}
+		return false;
 	}
 }

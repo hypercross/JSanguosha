@@ -30,6 +30,7 @@ public class AskForDiscard extends StagedGameEvent{
 			break;
 		case 1:
 			sub.attachToTop(GameEventCardMove.discard(decision.card(0)));
+			return true;
 		}
 		return false;
 	}
