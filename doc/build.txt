@@ -1,6 +1,19 @@
+中文
 eclipse编译方法
 
-1.打开eclipse，创建一个新workspace
-2.File -> Import -> General -> Existing Projects into Workspace
-3.选择你的repo目录 勾选JSanguosha和JSanguosha-desktop两个project,确定
-4.打开JSanguoshaDesktop.java文件，并点击编译运行按钮
+1.净身斋戒七日，面朝南方烧一炷香，心中默念“虫妹俺的嫁”
+2.打开eclipse，创建一个新workspace
+3.File -> Import -> General -> Existing Projects into Workspace
+4.选择你的repo目录 勾选JSanguosha和JSanguosha-desktop两个project,确定
+5.打开JSanguoshaDesktop.java文件，并点击编译运行按钮
+
+
+English
+Compilation guide for eclipse:
+
+1. launch eclipse, create a new workspace
+2. go to File -> Import -> General -> Existing Projects into Workspace
+3. browse to your repository's folder
+4. check the two projects JSanguosha and JSanguosha-desktop
+5. open JSanguoshaDesktop.java, and click "run".
+6. blame me for this crappy guide.
