@@ -56,6 +56,14 @@ public class ActionFilter {
 		}
 	}
 	
+	public static class Empty extends ActionFilter
+	{
+		public boolean check(Action action)
+		{
+			return false;
+		}
+	}
+	
 	public ActionFilter(){};
 	
 	public static class ActionType extends ActionFilter

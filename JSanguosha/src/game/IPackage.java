@@ -1,8 +1,9 @@
 package game;
 
+import game.api.IPlayable;
 import game.type.Type;
 
 public interface IPackage {
 
-	ICard getDefinitionCard(Type td);
+	IPlayable getDefinitionCard(Type td);
 }

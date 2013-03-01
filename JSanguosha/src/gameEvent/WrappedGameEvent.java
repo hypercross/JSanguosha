@@ -4,7 +4,8 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Comparator;
 
-import game.IEvent;
+import game.api.EventResolve;
+import game.entity.GameEntity;
 import game.type.Type;
 
 public class WrappedGameEvent extends StagedGameEvent{
@@ -13,7 +14,7 @@ public class WrappedGameEvent extends StagedGameEvent{
 	{
 		if(!a.isAnnotationPresent(EventResolve.class))return Integer.MAX_VALUE;
 
-		return a.getAnnotation(EventResolve.class).priority();
+		return a.getAnnotation(EventResolve.class).value();
 	}
 
 	static class ResolveMethodComp implements Comparator<Method>
@@ -24,7 +25,7 @@ public class WrappedGameEvent extends StagedGameEvent{
 		}
 	}
 
-	private static int[] getStages(IEvent ie)
+	private static int[] getStages(Object ie)
 	{
 		Method[] methods = ie.getClass().getMethods();
 		Arrays.sort(methods,new ResolveMethodComp());
@@ -42,18 +43,20 @@ public class WrappedGameEvent extends StagedGameEvent{
 		return stages;
 	}
 
-	IEvent ie;
-	public WrappedGameEvent(IEvent ie) {
-		super(Type.fromString(ie.type()), null, getStages(ie) );
-		this.ie = ie;
+	Object event;
+	public WrappedGameEvent(Object event, GameEntity game) {
+		super(Type.fromAnnotation(event), game, getStages(event) );
+		this.event = event;
 	}
+	
+	 
 
 	@Override
 	public boolean onResolve(int stage, GameEvent sub) {
-		for(Method m : ie.getClass().getMethods())
+		for(Method m : event.getClass().getMethods())
 			if(level(m) == stage)
 				try {
-					return (Boolean) m.invoke(ie);
+					return (Boolean) m.invoke(event);
 				} catch (Exception e)
 				{
 					//hmmm

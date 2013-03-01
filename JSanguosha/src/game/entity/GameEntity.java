@@ -5,8 +5,10 @@ import game.IPlayer;
 import game.PlayerManager;
 import game.type.Type;
 import gameEvent.GameEvent;
+import gameEvent.GameEventEngine;
 import gameEvent.GameEventTree;
 import gameEvent.RuleRegistry;
+import gameEvent.WrappedGameEvent;
 
 @SuppressWarnings("serial")
 public class GameEntity extends Entity{
@@ -87,10 +89,5 @@ public class GameEntity extends Entity{
 			if(!ge.resolve())events.pop();
 		}
 		else events.pop();
-	}
-	
-	public void newEvent(GameEvent ge)
-	{
-		events.peek().attach(ge);
 	}
 }

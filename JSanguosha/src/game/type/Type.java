@@ -63,4 +63,14 @@ public class Type {
 	{
 		return new LinkedType(name,parent);
 	}
+	
+	public static Type fromAnnotation(Object obj)
+	{
+		return fromString(obj.getClass().getAnnotation(game.api.Type.class).value());
+	}
+	
+	public boolean equals(Type atype)
+	{
+		return fullName().equals(atype.fullName());
+	}
 }

@@ -1,13 +1,9 @@
 package application.view;
 
-import test.card.CardDodge;
-import test.card.CardSlash;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.ui.Button.ButtonStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -44,9 +40,6 @@ public class DefaultSkin extends Skin{
 		tfs.background = this.getDrawable("banner");
 		tfs.fontColor = Color.LIGHT_GRAY;
 		this.add("default", tfs);
-		
-		this.add(CardSlash.typeCardSlash.fullName(), this.getRegion("card/slash"), TextureRegion.class);
-		this.add(CardDodge.typeDodge.fullName(), this.getRegion("card/dodge"), TextureRegion.class);
 		
 	}
 }

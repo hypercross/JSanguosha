@@ -6,15 +6,15 @@ import java.util.Comparator;
 
 public class RuleRegistry
 {	
-	private ArrayList<IRule> rules = new ArrayList<IRule>();
-	public Comparator<IRule> sorter = new compare_by_entity_hierarchy();
+	private ArrayList<Rule> rules = new ArrayList<Rule>();
+	public Comparator<Rule> sorter = new compare_by_entity_hierarchy();
 	
 	public boolean trigger(GameEvent ge)
 	{
 		boolean triggered = false;
 		if(ge.children.isEmpty())return false;
 		
-		for(IRule rule : rules)
+		for(Rule rule : rules)
 		{
 			triggered |= rule.trigger(ge);
 		}
@@ -22,17 +22,17 @@ public class RuleRegistry
 		return triggered;
 	}
 	
-	public void register(IRule rule)
+	public void register(Rule rule)
 	{
 		rules.add(rule);
 		Collections.sort(rules, sorter);
 	}
 	
-	private class compare_by_entity_hierarchy implements Comparator<IRule>
+	private class compare_by_entity_hierarchy implements Comparator<Rule>
 	{
 		// incorrect
 		@Override
-		public int compare(IRule arg0, IRule arg1) {
+		public int compare(Rule arg0, Rule arg1) {
 			if(arg0.owner().parentOf(arg1.owner()))return -1;
 			if(arg1.owner().parentOf(arg0.owner()))return 1;
 			return 0;

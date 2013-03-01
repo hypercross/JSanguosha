@@ -18,8 +18,4 @@ public class Main {
 
 		System.out.println(result.getMetaData());
 	}
-
-	public static void main(String[] args)
-	{
-	}
 }

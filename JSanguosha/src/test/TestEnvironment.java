@@ -2,29 +2,27 @@ package test;
 
 import application.network.NetworkManager;
 import game.Environment;
-import game.ICard;
 import game.IPlayer;
+import game.api.IPlayable;
 import game.entity.CardEntity;
 import game.entity.CardSlotEntity;
 import game.entity.Entity;
 import game.entity.GameEntity;
 import game.entity.PlayerEntity;
-import test.card.CardDodge;
-import test.card.CardSlash;
-import test.event.GameEventTurnLoop;
+import test.card.CardShan;
 
 public class TestEnvironment extends Environment{
 	
 	public TestEnvironment()
 	{
-		cards = new ICard[2];
+		cards = new IPlayable[2];
 		
-		cards[0] = new CardSlash();
-		cards[1] = new CardDodge();
+		cards[0] = new CardShan();
+		cards[1] = new CardShan();
 	}
 	
 	public void setupGame(GameEntity gameEntity) {
-		gameEntity.events.setRoot(new GameEventTurnLoop(gameEntity));
+//		gameEntity.events.setRoot(new GameEventTurnLoop(gameEntity));
 		
 		for(IPlayer ip : gameEntity.players.players)
 		{
